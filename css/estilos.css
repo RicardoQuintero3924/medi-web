@@ -1,0 +1,13 @@
+:root {
+    --colorPrincipal: #01316D;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
