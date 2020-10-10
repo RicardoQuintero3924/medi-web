@@ -1,5 +1,5 @@
 <h2 align="center">Medi-Web</h2>
-<p>Medi-web es una aplicación web que se encarga de la gestión de domicilios farmaceuticos, a nivel nacional e internacional.></p>
+<p>Medi-web es una aplicación web que se encarga de la gestión de domicilios farmaceuticos, a nivel nacional e internacional.</p>
 
 #### Componentes del desarrollo
 ##### Back-end
