@@ -1,0 +1,455 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Header / .top_navbar
+2. Banner / .banner
+3. Why Buy From Us ? / .blue-background-section
+4. About Planex Pharmacy / .pharmachy-box-gallery
+5. How it Works / .how-it-work-section
+6. Our Blog / .blog-section
+7. Newslatter / .newsletter-bg
+8. Treatments Page / .treatments-section
+9. About Us Page / .about-banner-section
+10. FAQ Page / .faq-section
+11. Reviews Page / .reviews-page-section
+12. Blog Page / .blog-section-box
+13. Blog Detail Page / .blog-detail-section
+14. Contact Page / .contact-section
+15. 404 Page / .section-page-not-found
+16. Button  / .btn-primary
+17. Footer / .footer-wrapper
+
+-------------------------------------------------------------------*/
+
+/*======= 1 Body ======*/
+body { margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:14px;  }
+* { margin:0; padding:0; }
+a { color:#53a6d5; text-decoration: none; outline: none; }
+a:hover, a:focus, .active { color:#53a6d5; text-decoration: none; outline: none; }
+.wrapper { width:100%; margin:0; padding:0; }
+/*======= End Body ======*/
+
+/*======= 1. Header ======*/
+.top_navbar { width:100%; margin:0; padding:10px 0; background-color:#fff; border-bottom: solid 1px #53a6d5; }
+.top_navbar .navbar { padding:0.5rem 0; }
+.top_navbar .navbar-light .navbar-nav .nav-link { padding: 7px 12px; margin:0 1px; border: solid 1px #fff; color:#5f6062; font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:400; text-decoration: none; outline: none; text-transform: uppercase; }
+.top_navbar .navbar-nav li a { outline: none; }
+.top_navbar .navbar-light .navbar-nav .nav-link:hover { margin:0 1px; border: solid 1px #53a6d5; color:#53a6d5; }
+.top_navbar .navbar-light .navbar-nav .active > .nav-link,
+.top_navbar .navbar-light .navbar-nav .nav-link.active,
+.top_navbar .navbar-light .navbar-nav .nav-link.show,
+.top_navbar .navbar-light .navbar-nav .show > .nav-link { padding: 7px 12px; color:#53a6d5; border: solid 1px #53a6d5; }
+.top_navbar .my-account-btn { margin-left:18px;}
+/*======= End Header ======*/
+
+/*======= 2. Banner ======*/
+.banner { width:100%; height:553px; background: url(../images/slider-01.jpg) center top no-repeat; background-size: cover; margin:0; padding-top:133px; }
+.banner .showcase { margin:0; padding:0;  }
+.banner .showcase h1 { margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:48px; color:#53a6d5; font-weight:600; text-shadow: 0 2px 1px #fff; }
+.banner .showcase h2 { margin:11px 0 22px 0; padding:0; font-family: 'Open Sans', sans-serif; font-size:20px; color:#333333; font-weight:400; }
+.banner .showcase p { margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:16px; color:#333333; font-weight:400; }
+.banner .showcase a .fa-chevron-right { margin-left:3px; font-size:14px; color:#fff;   }
+/*======= End Banner ======*/
+
+/*======= 3. Why Buy From Us ======*/
+.blue-background-section { background-color:#2b96cc; padding:0; margin:0; widows:100%; position: relative; z-index: 1; }
+.new-letter-section { padding:0; margin:50px 0; }
+.new-letter { padding:0; margin:0; }
+.new-letter i { margin-right:15px; font-size:44px; color:#fff; float: left; }
+.new-letter h2 { padding:0; margin:0; font-family: 'Open Sans', sans-serif; font-size:24px; color:#fff; font-weight:700; text-transform: uppercase; position: relative; top:10px; }
+.new-letter-section .new-letter-form-box { margin-top:44px; }
+.new-letter-section .new-letter-form-box .form-group { width:70%; float: left; }
+.new-letter-section .new-letter-form-box .form-group input { background-color: transparent; border: solid 1px #fff; border-radius:0; height:50px; font-size:16px; color:#fff; }
+.new-letter-section .new-letter-form-box .form-group input::placeholder  { color:#fff; }
+.new-letter-section .new-letter-form-box .form-group input:hover,
+.new-letter-section .new-letter-form-box .form-group input:focus,
+.new-letter-section .new-letter-form-box .form-group input.active:focus { border: solid 1px #79b9d9; box-shadow: none; }
+
+.who-we-are-section { padding:0; margin:50px 0 0 30px; }
+.who-we-are-section ul { padding:0; margin:20px 0 30px 0; list-style: none; }
+.who-we-are-section ul li { display:block; padding:0; margin:4px 0; font-family: 'Open Sans', sans-serif; font-size:18px; color:#fff; font-weight:400; }
+.who-we-are-section ul li i { padding:0; margin-right:10px; color:#fff; font-size:16px; }
+/*.who-we-are-section ul li a { padding:0; margin:0; }
+.who-we-are-section ul li a:hover { color:#a7dbf5; }*/
+
+.why-buy-from-us-main { width:100%; margin:0; padding:40px 18px; background-color:#fff; position: absolute; top:-13px; bottom:0; box-shadow:0 2px 3px #ccc;  }
+.why-buy-from-us-main h2 { padding:0; margin:0 0 15px 0; font-family: 'Open Sans', sans-serif; font-size:24px; color:#5f6062; font-weight:700; text-transform: uppercase; }
+.why-buy-from-us { margin:0 0 0 0; padding:0; }
+.why-buy-from-us ul { list-style: none; margin:0; padding:0; }
+.why-buy-from-us ul li { width:66%; display: block; margin:0; padding:12px 0; border-bottom: solid 1px #f3f3f3; }
+.why-buy-from-us ul li:last-child { border-bottom: none; }
+.why-buy-from-us ul li i { margin-right:10px; padding:0; font-size:14px; color:#2b96cc; }
+.why-buy-from-us ul li a { margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:15px; color:#555555; font-weight:400; text-decoration: none; }
+.why-buy-from-us ul li a:hover { color:#2b96cc; }
+.why-buy-from-us-main .truspilot { margin:0; position: absolute; right: 17px; top: 90px; }
+/*======= End Why Buy From Us ======*/
+
+/*======= 4. About Planex Pharmacy ======*/
+.pharmachy-box-gallery { margin:50px 0 0 0; padding:0; }
+.pharmachy-thumb { position: relative; width: auto; margin:0 -13px; }
+.pharmachy-thumb img {  display: block; width: 100%; height: auto; }
+.overlay { padding:0 10px; position: absolute; bottom: 0; left: 0; right: 0; background-color: rgba(18, 119, 170, 0.6); overflow: hidden; width: 100%; height: 0; transition: .5s ease; }
+.trainer-title { width:100%; padding:10px 0; background-color: rgba(18, 119, 170, 0.6); margin:0; font-family: 'Open Sans', sans-serif; font-size:30px; line-height:38px; color:#fff; font-weight:300; text-decoration: none; position: absolute; bottom:0; text-align: center; }
+.pharmachy-thumb:hover .overlay { height: 100%; cursor: pointer; }
+.text { position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); text-align: center; }
+.text h3 { margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:30px; color:#fff; font-weight:300; text-decoration: none; line-height:35px; margin-bottom:20px; }
+.text p { position: relative; margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:16px; color:#fff; font-weight:400; text-decoration: none; }
+.text .start-consultation-btn { margin-top:34px; }
+.text .start-consultation-btn a { display: inline-block; background-color:#fff; padding:14px 20px; margin:0; font-size:16px; color:#2b96cc; }
+.text .start-consultation-btn a:hover { color:#333; }
+.other-treatments-text { text-align: center; margin:40px 0 15px 0; padding:0; font-family: 'Open Sans', sans-serif; font-size:20px; color:#2b96cc; font-weight:600; text-transform: uppercase; }
+.other-treatments { margin:0 -13px 4px -13px; padding:25px 15px; background-color:#1277aa; }
+.other-treatments img { margin:0 10px 0 0; float: left; position: relative; top:4px; }
+.other-treatments h2 { margin:0; padding:0; font-family: 'Open Sans', sans-serif; font-size:20px; color:#fff; font-weight:300; }
+.other-treatments .fa-angle-right { position: absolute; top:34%; right: 15px; margin:0; padding:0; font-size:20px; color:#fff;  }
+.about-planex-pharmacy { margin:62px 0 75px 0; padding:0; font-family: 'Open Sans', sans-serif; text-align: center; }
+.about-planex-pharmacy h2 { margin:0 0 20px 0; padding:0; font-size:36px; font-weight:600; color:#2b96cc; }
+.about-planex-pharmacy p { margin:0 0 26px 0; padding:0; font-size:14px; font-weight:400; color:#555555; }
+/*======= End About Planex Pharmacy ======*/
+
+/*======= 5. How it Works ======*/
+.how-it-work-section { margin:0; padding:75px 0; background-color:#53a6d5; font-family:'Open Sans', sans-serif; color:#fff; }
+.how-it-work-section .how-it-work { margin:0 0 38px 0; padding:0; text-align: center; }
+.how-it-work-section .how-it-work h2 { margin:0; padding:0; font-size:36px; font-weight:600; }
+.how-it-work-section .how-it-work p { margin:0; padding:0; font-size:18px; font-weight:400; }
+.how-it-work-section .how-it-work-step-box { margin:0; padding:0; display:inline-block; text-align: center; }
+.how-it-work-section .dashed-border { width:72%; display: block; margin:0 auto; padding:0; content:""; position: relative; top:36px; left:0; right:0; bottom:0; border: dashed 3px #c3e9ff; z-index:777;  }
+.how-it-work-section .how-it-work-step-box .step-rounded { width:70px; height:70px; margin:0 auto; padding-top:15px; background-color:#496e99; -webkit-border-radius: 100px;-moz-border-radius: 100px;border-radius: 100px; text-align: center; text-transform: uppercase; position: relative; z-index: 888; }
+.how-it-work-section .how-it-work-step-box .step-rounded p { margin:0; padding:0; font-size:14px; font-weight:700; line-height: 18px; }
+.how-it-work-section .how-it-work-step-box .step-rounded p span { font-size:22px; }
+.how-it-work-section .how-it-work-step-box .icon-box { width:160px; height:160px; margin:45px auto; padding-top:36px; border: solid 8px #70c3f2; background-color:#fff; -webkit-border-radius: 100px;-moz-border-radius: 100px;border-radius: 100px; text-align: center; }
+.how-it-work-section .how-it-work-step-box h2 { font-size:30px; font-weight:300; }
+.how-it-work-section .how-it-work-step-box p { font-size:14px; font-weight:400; }
+/*======= End How it Works ======*/
+
+/*======= 6. Our Blog ======*/
+.blog-section { margin:75px 0; padding:0; font-family:'Open Sans', sans-serif; }
+.blog-section-text { margin:0 0 30px 0 !important; padding:0; font-size:36px; font-weight:600; color:#2b96cc; text-align: center; }
+.blog-section-text h2 { margin:0; padding:0; font-size:36px; font-weight:600; color:#2b96cc; }
+.blog-section .date-box { display: inline-block; vertical-align: top; margin-right:4px; padding:2px 6px; background-color:#555555; border-radius: 3px; text-align: center;  }
+.blog-section .date-box h3 { margin:0; padding:0; font-size:28px; font-weight:800; color:#fff;}
+.blog-section .date-box p { margin:0; padding:0; font-size:12px; font-weight:400; color:#cdd2d3; }
+.blog-section .single-home-blog { width:86%; display: inline-block; vertical-align:top; margin:0; padding:0;}
+.blog-section .single-home-blog .home-blog-details { margin:0; padding:0; }
+.blog-section .single-home-blog .home-blog-details h2 { margin:0; padding:0; }
+.blog-section .single-home-blog .home-blog-details h2 a { display: block; margin:10px 0; padding:0; font-size:16px; font-weight:700; color:#333; }
+.blog-section .single-home-blog .home-blog-details h3 { margin:5px 0 15px 0; padding:0; font-size:14px; font-weight:400; color:#777777; }
+.blog-section .single-home-blog .home-blog-details h3 a { margin:0; padding:0; font-size:14px; font-weight:400; color:#53a6d5; }
+.blog-section .single-home-blog .home-blog-details p { margin:0 0 24px 0; padding:0; font-size:14px; font-weight:400; line-height:24px; color:#555555; }
+/*======= End Our Blog ======*/
+
+/*======= 7. Newslatter ======*/
+.newsletter-bg { background-color:#bfdded; padding:38px 0 23px 0; margin:0;  }
+.newsletter { padding:0; margin-top:8px; }
+.newsletter h2 { padding:0; margin:0; font-family:'Open Sans', sans-serif; font-size:20px; color:#333; font-weight:400; }
+.newsletter-form-box { padding:0; margin:0; }
+.newsletter-form-box .form-group input { border-radius:0; height:45px; border: solid 1px #53a6d5;  }
+.newsletter-form-box .form-group button { position:absolute; right:15px; top:0; height:45px; background-color:#53a6d5; }
+/*======= End Newslatter ======*/
+
+/*======= 8. Treatments Page ======*/
+.row-margin-none { margin-right:0!important; }
+.row-MarginNone { margin-left:-15px!important; margin-right:-15px!important; }
+.treatments-section { margin:75px 0 35px 0; }
+.treatments { width:100%; margin:0 0 40px 0; padding-bottom:20px; border-bottom: solid 1px #dfdfdf; }
+.treatments h2 { font-size:16px; color:#333; font-weight:600; margin:0; padding:0; text-transform: uppercase; }
+.treatments p { font-size:14px; color:#555; font-weight:400; line-height:24px; margin:0 0 15px 0; padding:0; }
+.treatments .img-thumbnail { margin:20px 0 18px 0; max-width:100%; width:100%; padding:0; border: none; border-radius:0; }
+.treatments a { font-size:14px; color:#53a6d5; font-weight:700; margin:0; padding:0; }
+.treatments a:hover { color:#555; }
+.treatments a .fa-angle-right { font-size:16px; color:#53a6d5; margin-left:3px; }
+.right-panel { margin:0; padding:0; }
+.right-panel .general-pharmaceutical { margin:0; padding:6px 8px 0 8px; background-color:#2b96cc;  }
+.right-panel .general-pharmaceutical img { width:100%; margin-bottom:6px; }
+.right-panel .background-gray-bg-main { width:100%; margin:0; padding:0; background-color:#eeeeee; }
+.right-panel .why-buy-form-box { margin:0; padding:30px 20px; }
+.right-panel .why-buy-form-box h2 { margin:0 0 20px 0; padding:0; font-size:16px; font-weight:600; color:#333333; text-transform: uppercase; }
+.right-panel .why-buy-form-box .trustpilot-box { margin:0 0 20px 0; padding:14px; background-color:#fff; text-align: center; }
+.right-panel .why-buy-form-box .trustpilot-box h2 { margin-top:14px; padding:0; font-size:12px; color:#5f6062; font-weight:400; text-transform: capitalize; }
+.right-panel .why-buy-form-box .trustpilot-box h2 a { margin:0; padding:0; font-size:14px; color:#5f6062; font-weight:600; }
+.right-panel .why-buy-form-box .trustpilot-box h2 a:hover { color:#53a6d5; }
+.pharmacy-list { margin:0; padding:0;  }
+.pharmacy-list ul { list-style:none; margin:0; padding:0;  }
+.pharmacy-list ul li { display:block; margin:12px 0 0 0; padding:0 0 12px 0; border-bottom: solid 1px #fff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.pharmacy-list ul li:before { content:"\f00c"; position: relative; left:0; top:0; width:5px; height:5px; font-family:'FontAwesome'; font-size:14px; color:#2b96cc; }
+.pharmacy-list ul li a { margin:0 0 0 5px; padding:0; font-size:14px; color:#555555; font-weight:400; }
+.pharmacy-list ul li a:hover { color:#53a6d5; }
+.who-we-are-main-box { background-color:#2b96cc; margin:0; padding:20px; }
+.who-we-are-main-box .img-thumbnail { margin-top:15px; padding:2px; border-radius:0; border:0; }
+.who-we-are-main-box h2 { margin:0; padding:0; font-size:20px; color:#fff; font-weight:700; text-transform: uppercase; }
+.who-we-are-main-box h2 .fa-medkit { margin:0 10px 0 0; padding:0; font-size:30px; color:#fff; position: relative; top:2px;  }
+.who-we-are-main-box .list-link { margin:15px 0 0 0; padding:0;  }
+.who-we-are-main-box .list-link ul { list-style:none; margin:0; padding:0;  }
+.who-we-are-main-box .list-link ul li { display:block; margin:8px 0 0 0; padding:0 0 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color:#fff; }
+.who-we-are-main-box .list-link ul li:before { content:"\f00c"; position: relative; left:0; top:0; width:5px; height:5px; font-family:'FontAwesome'; font-size:14px; color:#fff; }
+.who-we-are-main-box .list-link ul li a { margin:0 0 0 5px; padding:0; font-size:14px; color:#fff; font-weight:300; }
+.who-we-are-main-box .list-link ul li a:hover { color:#87d5fc; }
+.medication-usage-guide-list { margin:0; padding:28px 20px; }
+.medication-usage-guide-list .youtube { margin:0; padding:0; position: relative; }
+.medication-usage-guide-list .youtube .youtube-btn { width:100%; position: absolute; top:40px; text-align: center; margin:0; padding:0; }
+.medication-usage-guide-list .youtube .img-thumbnail { margin:0 0 10px 0; padding:0; border-radius:0; border: solid 3px #d7d7d7; }
+.medication-usage-guide-list h2 { margin:0 0 20px 0; padding:0; font-size:16px; font-weight:600; color:#333333; text-transform: uppercase; }
+.medication-usage-guide-list .medication-list { margin:0; padding:0;  }
+.medication-usage-guide-list .medication-list ul { list-style:none; margin:0; padding:0;  }
+.medication-usage-guide-list .medication-list ul li { display:block; margin:0; padding:8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.medication-usage-guide-list .medication-list ul li:before { content:"\f00c"; position: relative; left:0; top:0; width:5px; height:5px; font-family:'FontAwesome'; font-size:14px; color:#2b96cc; }
+.medication-usage-guide-list .medication-list ul li a { margin:0 0 0 7px; padding:0; font-size:14px; color:#555555; font-weight:400; overflow: hidden; white-space: nowrap; }
+.medication-usage-guide-list .medication-list ul li a:hover { color:#53a6d5; }
+.latest-post { margin:10px 0 0 0; padding:0; }
+.latest-post p { margin:0; padding:0; font-size:14px; color:#fff; font-weight:300; }
+.latest-post h2 { margin:15px 0; padding:0; font-size:14px; color:#fff; font-weight:700; text-transform: capitalize; }
+.latest-post a { margin:15px 0; padding:0; font-size:14px; color:#fff; font-weight:400; }
+.latest-post a:hover { color:#87d5fc; }
+.view-all-post { padding:13px; margin:0 0 20px 0; background-color:#197db0; text-align: center; }
+.view-all-post a { margin:0; font-size:14px; color:#fff; font-weight:700; text-transform: uppercase; }
+.view-all-post a:hover { color:#4ec0fa;  }
+.view-all-post a:after { content:"\f105"; position: relative; left:5px; top:0; font-family:'FontAwesome'; font-size:16px; color:#fff; font-weight:400; }
+
+.patient-review-section { margin:0; padding:75px 0; background-color:#53a6d5; }
+.patient-review { width:100%; margin:0; padding:0; text-align: center; }
+.patient-review h2 { margin:0; padding:0; font-size:36px; color:#fff; font-weight:600; line-height:36px; }
+.patient-review p { margin:0; padding:0; font-size:18px; color:#fff; font-weight:300; }
+.patient-review-main-box { margin:0 0 0 40px; position:relative; padding:60px 0; }
+.patient-review-slide-box { width:100%; position: relative;	background-color:#3f91c0; border:0; text-align:left; padding:30px 30px 30px 202px; z-index: 1111; }
+.patient-review-slide-box p { font-size:16px; font-weight:400; font-style:italic; color:#fff; }
+.patient-review-slide-box:after, .patient-review-slide-box:before { top: 100%; right:5%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+.patient-review-slide-box:after { border-color: rgba(136, 183, 213, 0);	border-top-color:#3f91c0; border-width: 30px; margin-left: -30px; }
+.client-img { margin:0; position:absolute; z-index: 2222; top:10%; left:-30px;   }
+.client-img .rounded-circle { border: solid 10px #6cc1f1; }
+.patient-review-section .owl-carousel .owl-dots.disabled, .patient-review-section .owl-carousel .owl-nav.disabled { display: block; }
+.patient-review-section .owl-theme .owl-dots { display: none; }
+.patient-review-section .owl-carousel .owl-nav.disabled { display:block; }
+.patient-review-section .owl-dots { display:none !important; }
+.patient-review-section .owl-theme .owl-nav { position: absolute; width:100%; top:36%; }
+.patient-review-section .owl-theme .owl-nav [class*="owl-prev"] { float: left; position: relative; left:-8%; width:46px; height:46px; background-color: transparent; font-size:24px; color:#fff; padding-top:5px; border-radius:0;  }
+.patient-review-section .owl-theme .owl-nav [class*="owl-next"] { float:right; position: relative; right:-8%; width:46px; height:46px; background-color: transparent; font-size:24px; color:#fff; padding-top:5px; border-radius:0; }
+.patient-review-section .owl-theme .owl-nav .owl-prev:hover, .out-team-section .owl-theme .owl-nav .owl-next:hover { background-color: transparent; }
+/*======= End Treatments Page ======*/
+
+/*======= 9. About Us Page ======*/
+.about-banner-section { margin:0; padding:70px 0 0 0; background: url(../images/about-us-banner.jpg) center top no-repeat; background-size: cover; }
+.about-banner-section .about-banner-title { margin:0; padding:0; font-family: 'Open Sans', sans-serif; text-align: center; }
+.about-banner-section .about-banner-title h2 { margin:0; padding:0; font-size:48px; color:#53a6d5; font-weight:600; text-shadow: 0 2px 1px #fff; }
+.about-banner-section .about-banner-title p { margin:0 0 15px 0; padding:0; font-size:16px; color:#555; font-weight:400; }
+.about-banner-section .about-banner-title nav  { display: inline-block; margin-top:15px; font-family: 'Open Sans', sans-serif !important; }
+.about-banner-section .about-banner-title .breadcrumb  { border-radius:0; margin-bottom:0; background-color: rgba(8, 62, 92, 0.3); padding:14px 50px;  }
+.about-banner-section .about-banner-title .breadcrumb li {  font-size:12px;  color:#fff !important; font-weight:600;  text-transform: uppercase; }
+.about-banner-section .about-banner-title .breadcrumb li a {  color:#fff !important; }
+.about-banner-section .about-banner-title .breadcrumb-item + .breadcrumb-item::before  {  color:#fff !important; margin:0 5px; }
+
+.about-pharmacy-section { margin:75px 0; padding:0; }
+.about-pharmacy-section .about-pharmacy-conten { margin:0; padding:0; }
+.about-pharmacy-section .about-pharmacy-conten h2 { margin-bottom:20px; padding:0; font-size:36px; color:#2b96cc; font-weight:600; }
+.about-pharmacy-section .about-pharmacy-conten p { margin:0 0 30px 0; padding:0; font-size:14px; color:#555555; font-weight:400; }
+.about-pharmacy-section ul.about-pharmacy-list { float:left; list-style: none; width:50%; margin:0; padding:0;  }
+.about-pharmacy-section ul.about-pharmacy-list li { display:block; margin:0 0 15px 0; padding:0; }
+.about-pharmacy-section ul.about-pharmacy-list li:before { content: "\f00c"; font-family: FontAwesome; position: relative; left: 0px; top:0; font-weight: 400; font-size:14px; color:#2b96cc; margin:0 8px 0 0; padding:0; }
+.about-pharmacy-section ul.about-pharmacy-list li a { margin:0; padding:0; font-size:15px; color:#555555; }
+.about-pharmacy-section ul.about-pharmacy-list li a:hover { color:#2b96cc; }
+
+.out-team-section { margin:0; padding:70px 0 11px 0; background-color:#e8e8e8; }
+.out-team-section .out-team-title {  width:100%; margin-bottom:20px; padding:0; text-align: center; }
+.out-team-section .out-team-title h2 { margin:0; padding:0; font-size:36px; color:#2b96cc; font-weight:600; line-height:36px;  }
+.out-team-section .out-team { margin:0; padding:0; }
+.out-team-section .out-team-bg { background-color:#f1f1f1; margin:0; padding:34px 20px; font-family: 'Open Sans', sans-serif; text-align: center; }
+.out-team-section .out-team-bg h2 { margin:0 0 10px 0; padding:0; font-size:18px; font-weight:700; color:#2b96cc; text-transform: uppercase; }
+.out-team-section .out-team-bg p { margin:0; padding:0; font-size:14px; font-weight:400; color:#232323; }
+.out-team-section .out-team-bg .follow-icon { margin-top:18px; padding:0; }
+.out-team-section .out-team-bg .follow-icon ul { list-style:none; margin:0; padding:0; }
+.out-team-section .out-team-bg .follow-icon ul li { display:inline-block; margin:0 3px; padding:0; width:24px; height:24px; text-align: center; }
+.out-team-section .out-team-bg .follow-icon ul li a.facebook,
+.out-team-section .out-team-bg .follow-icon ul li a.twitter,
+.out-team-section .out-team-bg .follow-icon ul li a.linkedin  { width:24px; height:24px; display: inline-block; background-color:#3c5a98; margin:0; padding-top:2px; font-size:14px; color:#fff;  }
+.out-team-section .out-team-bg .follow-icon ul li a.twitter { background-color:#00aced; }
+.out-team-section .out-team-bg .follow-icon ul li a.linkedin { background-color:#0082b4; }
+
+.out-team-section .owl-carousel .owl-nav.disabled { display:block; }
+.out-team-section .owl-dots { display:none !important; }
+.out-team-section .owl-theme .owl-nav { position: relative; width:100%; top:-50%; }
+.out-team-section .owl-theme .owl-nav [class*="owl-prev"] { float: left; position: relative; left:-6%; width:46px; height:46px; background-color:#838383; font-size:24px; color:#fff; padding-top:5px; border-radius:0;  }
+.out-team-section .owl-theme .owl-nav [class*="owl-next"] { float:right; position: relative; right:-6%; width:46px; height:46px; background-color:#838383; font-size:24px; color:#fff; padding-top:5px; border-radius:0; }
+.out-team-section .owl-theme .owl-nav .owl-prev:hover, .out-team-section .owl-theme .owl-nav .owl-next:hover { background-color: #53a6d5; }
+/*======= End About Us Page ======*/
+
+/*======= 10. FAQ Page ======*/
+.faq-section { margin:0; padding:75px 0 65px 0; background-color:#f1f1f1; }
+.faq-section .panel-default { margin:0 0 20px 0; padding:20px 20px 6px 20px; background-color:#fff; box-shadow: 0px 2px 2px #c2c2c2; font-family: 'Open Sans', sans-serif; }
+.faq-section .panel-default h2 { font-size:16px; color:#555; font-weight:600; margin:0; }
+.faq-section .panel-default h2 a { font-size:16px; color:#555; font-weight:600; margin:0; }
+.faq-section .panel-default .panel-body { margin:15px 0 0 0; padding-top:24px; border-top: solid 1px #dfdfdf; }
+.faq-section .panel-default .panel-body p { font-size:14px; color:#555; font-weight:400; margin:0 0 15px 0; padding:0; }
+
+.faq-section .panel-title > a:before { width:31px; height:31px; float: right !important; font-family: FontAwesome; content:""; background: url(../images/minus.png) 0 0 no-repeat; background-color:#fff; border: solid 1px #53a6d5; text-align: center; position:relative; top:-7px; margin-left:10px; }
+.faq-section .panel-title > a.collapsed:before { float: right !important; content:""; background: url(../images/plus.png) 0 0 no-repeat; background-color:#fff; border: solid 1px #555; position:relative; top:-7px; }
+.faq-section .panel-title > a:hover,
+.faq-section .panel-title > a:active,
+.faq-section .panel-title > a:focus  { border: none; text-decoration:none; }
+/*======= End FAQ Page ======*/
+
+/*======= 11. Reviews Page ======*/
+.reviews-page-section { margin:75px 0; }
+.review-box { position: relative; margin:0; box-sizing: border-box; box-shadow: 0px 1px 8px 0 rgba(205, 205, 205, 0.6); background-color:#fff; padding:20px 20px 70px 20px; }
+.review-box .quote-img { text-align: center;   }
+.review-box::after { content: ""; position: absolute; width: 0; height: 0; margin-left: -0.5em; bottom: -2em; left:90%; box-sizing: border-box; border: 1em solid black; border-color: transparent transparent #fff #fff; transform-origin: 0 0; transform: rotate(-45deg); box-shadow:-4px 4px 8px 0 rgba(205, 205, 205, 0.6); }
+.review-box p { margin:15px 0 0 0; padding:0; font-size:15px; color:#555555; font-weight:400; line-height:26px; }
+.reviews { margin:0 20px; padding:0; position:relative; top:-44px; }
+.reviews .img-thumbnail { padding:0; background-color:#fff; border:3px solid #2b96cc; border-radius: 0; float: left; margin-right:15px; }
+.reviews h2 { font-size:18px; color:#333; font-weight:600; position: relative; top:58px; }
+.add-review-title-box { margin:0; }
+.add-review-title-box h2 { margin:0 0 20px 0; font-size:24px; color:#333; font-weight:600; }
+.add-review-box { margin:0; }
+.add-review-box .form-group input { margin:0; padding:10px; height:54px; border-radius:0; border: solid 1px #bdbdbd; font-size:14px; font-weight:400;  }
+.add-review-box .form-group input:focus, .add-review-box .form-group input:hover { box-shadow:none; border: solid 1px #53a6d5;  font-size:14px; font-weight:400; color:#333;  }
+.file { visibility: hidden; position: absolute; }
+.add-review-box .form-group .input-group button { border-radius: 0; background-color:#53a6d5; font-size:18px; font-weight:600; color:#fff; padding-left:28px; padding-right:28px; cursor: pointer; }
+.add-review-box .form-group textarea { margin:0; padding:10px; height:120px; border-radius:0; border: solid 1px #bdbdbd;  font-size:14px; font-weight:400; }
+.add-review-box .form-group textarea:focus, .add-review-box .form-group textarea:hover { border: solid 1px #53a6d5; box-shadow:none;  font-size:14px; font-weight:400; color:#333; }
+.add-review-box a { margin:0; padding:12px 24px; font-size:18px; font-weight: 600; text-transform: none; }
+/*======= End Reviews Page ======*/
+
+/*======= 12. Blog Page ======*/
+.blog-section-box { padding:0; }
+.blog-section .margin-bottom40 { margin-bottom:50px; }
+.blog-section-box .load-more { margin-bottom:0; text-align: center; }
+.blog-section-box .load-more a img { margin-right:10px; }
+.blog-section-box .load-more-btn { max-width:170px; width: 100%; padding:8px 12px 12px 12px; font-size:18px; font-weight:600; text-transform: capitalize; }
+#blog-list-main article { display: none; }
+/*======= End Blog Page ======*/
+
+/*======= 13. Blog Detail Page ======*/
+.blog-detail-section { margin:75px 0;}
+.blog-detail-left { margin:0; padding:0; }
+.blog-detail-left .blog-detail-contain { margin:0; padding:0; }
+.blog-detail-left .blog-detail-contain h2 { margin:0; padding:0; }
+.blog-detail-left .blog-detail-contain h2 a { display: block; margin:24px 0 5px 0; padding:0; font-size:17px; font-weight:700; color:#333; }
+.blog-detail-left .blog-detail-contain .post-meta { margin:0 0 15px 0; padding:0; }
+.blog-detail-left .blog-detail-contain .post-meta ul { margin:0; padding:0; list-style: none; }
+.blog-detail-left .blog-detail-contain .post-meta ul li { display: inline-block; margin:0 8px 0 0; padding:0 8px 0 0; font-size:14px; font-weight:400; color:#777777; line-height:14px; border-right: solid 1px #bdbdbd;  }
+.blog-detail-left .blog-detail-contain .post-meta ul li:last-child { border-right:none; }
+.blog-detail-left .blog-detail-contain .post-meta ul li a { margin:0; padding:0; font-size:14px; font-weight:400; color:#53a6d5;  }
+.blog-detail-left .blog-detail-contain p { margin:0 0 24px 0; padding:0; font-size:14px; font-weight:400; line-height:24px; color:#555555; }
+.blog-detail-left .share-post { margin:0; padding:15px 0; border-top: solid 1px #bdbdbd; border-bottom: solid 1px #bdbdbd; }
+.blog-detail-left .share-post h2 { float: left; margin:0 15px 0 0; padding:0; font-size:24px; line-height:24px; color:#333333; font-weight:600; }
+.blog-detail-left .share-post .follow-us { margin:0; padding:0; }
+.blog-detail-left .share-post .follow-us ul { list-style: none; margin:0; padding:0; }
+.blog-detail-left .share-post .follow-us ul li { display: inline-block; margin:0; padding:0; }
+.blog-detail-left .share-post .follow-us ul li a { margin:0 5px; padding:0; font-size:20px; color:#333333; font-weight:600; }
+.blog-detail-left .share-post .follow-us ul li a:hover { color:#53a6d5; }
+.blog-detail-left .comment { margin:50px 0; padding-bottom:30px; border-bottom: solid 1px #bdbdbd; }
+.blog-detail-left .comment h2 { margin:0 0 24px 0; padding:0; font-size:24px; line-height:24px; color:#333333; font-weight:600; }
+.blog-detail-left .comment .comment-box { display: inline-block; margin:0 0 20px 0; padding:0; }
+.blog-detail-left .comment .comment-box .comment-main { margin:0; padding:0; float: left; }
+.blog-detail-left .comment .comment-box .comment-main .img-fluid { border: solid 1px #e3e3e3; }
+.blog-detail-left .comment .comment-box .comment-main .reply { width:100%; padding:0; margin-top:10px; }
+.blog-detail-left .comment .comment-box .comment-main .reply a { display:block; background-color:#53a6d5; height:35px; padding-top:5px; margin:0; font-size:15px; font-weight:700; color:#fff; text-align:center; }
+.blog-detail-left .comment .comment-box .comment-contain { margin:0; padding:0 0 0 126px; }
+.blog-detail-left .comment .comment-box .comment-contain h3 { margin:0; padding:0; font-size:18px; color:#333; font-weight:600; }
+.blog-detail-left .comment .comment-box .comment-contain h3 a { margin:0; padding:0; font-size:18px; color:#333; font-weight:600; }
+.blog-detail-left .comment .comment-box .comment-contain h3 a:hover { color:#53a6d5; }
+.blog-detail-left .comment .comment-box .comment-contain h3 span { font-size:14px; font-weight:400; }
+.blog-detail-left .comment .comment-box .comment-contain p { margin-top:15px; font-size:15px; line-height:24px; color:#333; font-weight:400; }
+.blog-detail-left .leave-comment { margin:0; padding:0; }
+.blog-detail-left .leave-comment h2 { margin-bottom:25px; padding:0; font-size:24px; line-height:24px; color:#333333; font-weight:600; }
+.blog-detail-left .leave-comment-from { margin:0; }
+.blog-detail-left .leave-comment-from .form-group input { margin:0; padding:10px; height:54px; border-radius:0; border: solid 1px #bdbdbd; }
+.blog-detail-left .leave-comment-from .form-group input:focus, .blog-detail-left .leave-comment-from .form-group input:hover { box-shadow:none; border: solid 1px #53a6d5; }
+.blog-detail-left .leave-comment-from .form-group textarea { margin:0; padding:10px; height:120px; border-radius:0; border: solid 1px #bdbdbd; }
+.blog-detail-left .leave-comment-from .form-group textarea:focus, .blog-detail-left .leave-comment-from .form-group textarea:hover { box-shadow:none; border: solid 1px #53a6d5; }
+.blog-detail-left .leave-comment-from a { margin:30px 0 0 0; padding:12px 24px; font-size:18px; font-weight: 600; text-transform: none; }
+.search-box-here { margin:0 0 20px 0; }
+.search-box-here .input-group { height:62px; border:solid 10px #2b96cc; margin: 0; padding: 0; }
+.search-box-here .input-group input { border:0; margin:0; padding:8px 0 8px 8px; font-size:15px; color:#666666; font-weight: 400; }
+.search-box-here .input-group input:focus { box-shadow: none; }
+.search-box-here .input-group-btn { margin: 0; }
+.search-box-here .input-group-btn button { background-color:#fff; height:42px; border-radius:0; margin:0; padding:0 10px; cursor:pointer; color:#333; font-size:18px;  }
+.search-box-here .input-group-btn button:focus { box-shadow: none; }
+.glob-categories { margin:0; padding:0 0 15px 0 !important; }
+.glob-categories-main { margin:0 0 20px 0; }
+.glob-categories  h3 { background-color:#2b96cc; margin:0 0 15px 0; padding:20px; font-size:20px; font-weight:700; color:#fff; text-transform: uppercase; }
+.glob-categories-list { margin:0; padding:0 20px !important; }
+.tags-list { margin:0 10px; padding:0; }
+.tags-list ul { list-style: none; margin:0; padding:0; }
+.tags-list ul li { display: inline-block; margin:0 5px 10px 5px; padding:8px; background-color:#fff;  }
+.tags-list ul li a { margin:0; padding:0; font-size:14px; color:#555555; font-weight:400; }
+.tags-list ul li a:hover { color:#53a6d5; }
+.calendar-box { margin:0; }
+.calendar-margin-bottomNone { padding:0 !important;  }
+.calendar-margin-bottomNone h3 { margin-bottom:0;  }
+/*======= End Blog Detail Page ======*/
+
+/*======= 14. Contact Page ======*/
+.contact-section { margin:75px 0;}
+.contact-form { margin:0; padding:30px; border:solid 1px #e9e9e9; }
+.contact-form .form-group input { margin:0; border:0; border-radius:0; border-bottom: solid 1px #e9e9e9; font-size:15px; color:#5f6062; }
+.contact-form .form-group input:hover, .contact-form .form-group input:focus { border-radius:0; box-shadow:none; border-bottom: solid 1px #53a6d5; }
+.contact-form .form-group textarea { height:194px;  margin:0; border:0; border-radius:0; border-bottom: solid 1px #e9e9e9; font-size:15px; color:#5f6062; }
+.contact-form .form-group textarea:hover, .contact-form .form-group textarea:focus { border-radius:0; box-shadow:none; border-bottom: solid 1px #53a6d5; }
+.submit-btn { margin-top:20px !important; width:150px; height:50px; font-size:18px !important; color:#fff; font-weight:600; text-transform: capitalize !important; }
+.contact-icon-box { margin-bottom:40px;}
+.contact-icon-box i { margin-bottom:10px; font-size:48px; color:#53a6d5; }
+.contact-icon-box p { margin:0; font-size:15px; color:#555; font-weight:400; }
+.contact-icon-box a { margin:0; font-size:15px; color:#555; font-weight:400; }
+.map { margin:0; }
+.map iframe { width:100%; }
+/*======= End Contact Page ======*/
+
+/*======= 15. 404 Page ======*/
+.page-not-found-box { margin:0; padding:0; }
+.right-box { float:right; }
+.page-not-found-box h2 { margin-top:45px; padding:0; font-size:48px; color:#2e2e2e; font-weight:300; text-transform:uppercase;  }
+.page-not-found-box h2 span { color:#53a6d5; font-weight:900;  }
+.page-not-found-box h3 { font-size:48px; font-weight:400; color:#2e2e2e; text-transform:uppercase; }
+.back-btn { margin-top:60px; }
+.back-btn a { width:308px;  display:inline; padding:20px 40px;  background-color:#53a6d5; border-radius:0; font-size:22px; font-weight:700; color:#fff; text-transform:uppercase; text-align: center;  }
+.back-btn a:hover { background-color:#2586bd; }
+/*======= End 404 Page ======*/
+
+/*======= 16. Button ======*/
+.btn-primary { cursor: pointer; margin:0; padding: 8px 15px; background-color:#53a6d5 !important; border: none; border-radius:0; font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:600; text-decoration: none; outline: none; text-transform: uppercase; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active:focus { background-color:#2586bd !important; box-shadow: none; color:#fff; }
+.btn-view-more { display: inline-block; margin-top:38px; padding:14px 26px; background-color:#53a6d5 !important; font-weight:600; text-decoration: none; outline: none; text-transform: uppercase; box-shadow: 1px 3px 0 #043A59; }
+.btn-view-more:hover, .btn-view-more:focus, .btn-view-more.active:focus { box-shadow: 1px 3px 0 #043A59; }
+.btn-submit { padding:0 13px; margin:0 0 0 15px; cursor: pointer; height:50px; background-color:transparent !important; border: solid 1px #fff;  color: #fff; font-size:16px; text-transform: uppercase; font-weight:600; border-radius: 0; }
+.btn-submit:hover, .btn-submit:focus, .btn-submit.active:focus { background-color:transparent !important; border: solid 1px #79b9d9!important; }
+.btn-send { cursor: pointer; margin:0 0 10px 0; padding:10px; background-color:#53a6d5 !important; border: none; border-radius:0; font-family: 'Open Sans', sans-serif; font-size:22px; color:#fff; font-weight:600; text-decoration: none; outline: none; text-transform: uppercase; }
+.btn-send:hover, .btn-send:focus, .btn-send.active:focus { background-color:#2586bd !important; box-shadow: none; color:#fff; }
+/*======= End Button ======*/
+
+/*======= 17. Footer ======*/
+.footer-wrapper { background-color:#135c85; padding:40px 0 20px 0; margin:0; }
+.footer-wrapper .form-box { padding:0; margin:0; }
+.footer-wrapper .form-box .input-group .input-group-addon { background-color:#fff; border: none; padding:15px; }
+.footer-wrapper .form-box .input-group .input-group-addon:not(:last-child) { border-radius:0; border-right: dotted 2px #ccc; }
+.footer-wrapper .form-box .input-group input { border: none; padding:15px; border-radius:0; font-family:'Open Sans', sans-serif; font-size:14px; color:#5f6062; font-weight:600; }
+.footer-wrapper .form-box .input-group input:focus { box-shadow: none; }
+.footer-wrapper .form-box .input-group textarea { border: none; padding:15px; border-radius:0; font-family:'Open Sans', sans-serif; font-size:14px; color:#5f6062; font-weight:600; }
+.footer-wrapper .form-box .input-group textarea:focus { box-shadow: none; }
+.footer-wrapper .form-row > .col, .form-row > [class*="col-form-box"] { padding-left:0; padding-right:-1px; }
+.footer-wrapper .message-img { position:relative; top:-18px; }
+.footer-wrapper .copyright { width:100%; border-top:solid 1px #1f6993; padding-top:20px; margin:30px 0 0px 0; font-family:'Open Sans', sans-serif; font-size:13px; color:#6ab9e6; font-weight:400; text-align: center; }
+.footer-wrapper .copyright p { padding:0; margin:0; }
+.footer-wrapper .copyright a { padding:0; margin:0; color:#8dd0f5; }
+.footer-wrapper .copyright a:hover { color:#fff;  }
+.single-widget { margin:0; }
+.widget-title { margin-bottom:15px; }
+.widget-title h2 { font-family:'Open Sans', sans-serif; font-size:20px;  color:#fff; font-weight: 600; text-transform: uppercase; padding-bottom: 10px; position: relative; text-transform: uppercase; }
+.widget-title h2::after { background-color:#53a6d5; bottom: 0; content: ""; height:3px; left: 0; position: absolute; width:30px; }
+.footer { margin:0; padding:0;  }
+.footer ul { list-style:none; margin:0; padding:0;  }
+.footer ul li { display: block; margin:8px 0; padding:0;  }
+.footer ul li a { margin:0; padding:0; font-family:'Open Sans', sans-serif; font-size:14px; color:#fff; font-weight:400; text-transform: uppercase; }
+.footer ul li a:hover { color:#53a6d5; }
+.footer p a { margin:0; padding:0; font-family:'Open Sans', sans-serif; font-size:14px; color:#fff; font-weight:400; }
+.footer p a:hover { color:#6ab9e6; }
+.footer p { margin:0; padding:0; font-family:'Open Sans', sans-serif; font-size:14px; color:#fff; font-weight:400; }
+.footer p span { color:#6ab9e6; }
+.social-icons { margin:24px 0 0 0; padding:0;  }
+.social-icons ul { list-style: none; margin:0; padding:0;  }
+.social-icons ul li { display:inline;  margin:0 10px 0 0;  }
+.social-icons ul li a { display:inline-block; width:40px; height:40px; margin:0; padding:0; color:#fff; font-size:20px; padding-top:4px; background-color:#0c3d59; text-align: center; }
+.social-icons ul li a:hover { color:#53a6d5; }
+/*======= End Footer ======*/
+
+
+
+

@@ -1,0 +1,71 @@
+.carousel-fade{
+  margin-top:-90px;
+}
+.carousel-fade .carousel-inner{
+ padding:0 0 20px 0;
+}
+.carousel-fade .carousel-indicators{
+  bottom:0;
+  margin:0;
+  left:130px;
+  text-align:left;
+  width:auto;
+}
+
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel-fade .carousel-control.left,
+.carousel-fade .carousel-control.right {
+  background-image:none;
+  display:none;
+}
+
+
+
+
+
+/*html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background: #74C390;
+}
+
+.item:nth-child(2) {
+    background: #51BCE8;
+}
+
+.item:nth-child(3) {
+    background: #E46653;
+} */
