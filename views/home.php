@@ -26,6 +26,7 @@
             position: relative;
         }
         
+        
         footer {
             position: absolute;
             bottom: 0;
@@ -44,28 +45,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="">Luisa</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-            </li>
-        </ul>
-    </nav>
+
 
     <div class="container">
         <div style="padding: 20px;">
             <h2 class="text-center">Bienvenido</h2>
         </div>
         <div class="row" id="panel"></div>
-        <footer>
-            <p>&copy Medi-web 2020</p>
-        </footer>
+        <?php include '../template/footer.php';  ?>
     </div>
 
 
@@ -89,7 +76,12 @@
         });
 
         function procesar(opc) {
-            let urls = ['', 'empleado/listaEmpleados.php', '', '', ''];
+            let urls = [
+                '', 
+                'empleado/listado.php', 
+                'tipo_empleado/listado.php', 
+                '', 
+                ''];
             debugger;
             $(location).attr('href', urls[opc]);
         }
