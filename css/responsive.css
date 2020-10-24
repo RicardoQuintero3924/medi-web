@@ -1,0 +1,187 @@
+@media (min-width: 1200px) {
+ .footer-wrapper .message-img { position:relative; top:-18px; }
+}
+
+@media (max-width: 1199px) {
+  .other-treatments h2 { font-size:16px; }
+  .newsletter { margin-top:0; }
+  .footer-wrapper .message-img { position:relative; top:-10px; }
+  .text h3 { font-size:28px; }
+  .banner .showcase h1 { font-size:42px; }
+  .out-team-section .owl-theme .owl-nav [class*="owl-prev"] { left:0%;  }
+  .out-team-section .owl-theme .owl-nav [class*="owl-next"] {  right:0%;  }
+  .glob-categories h3 { font-size:18px; }
+  .right-panel .why-buy-form-box h2 { font-size:15px; margin-bottom:15px;  }
+  .medication-usage-guide-list h2 { font-size:15px; }
+  .who-we-are-main-box h2 { font-size:15px; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-prev"] { left:-1%; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-next"] { right:-1%; }
+  .faq-section .panel-default { padding:20px; }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .right-panel .why-buy-form-box {  padding:15px 10px; }
+  .who-we-are-main-box {  padding:15px 10px; }
+  .medication-usage-guide-list {  padding:15px 10px; }
+ }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top_navbar .navbar-light .navbar-nav .nav-link { padding:7px; }
+  .top_navbar .navbar-light .navbar-nav .show > .nav-link { padding:7px; }
+  .top_navbar .my-account-btn { margin-left:10px;}
+  .new-letter-section .new-letter-form-box .form-group { width:64%; }
+  .why-buy-from-us ul li { width:70%; }
+  .why-buy-from-us ul li a { font-size:14px; }
+  .truspilot img { height:84px; }
+  .why-buy-from-us { margin-right:0; }
+  .blog-section .single-home-blog { width:100%; }
+  .blog-section .date-box { position: absolute; top:0; }
+  .patient-review-main-box { margin:0 0 0 60px; }
+  .client-img { left:-50px; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-prev"] { left:-10%; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-next"] { right:-10%; }
+  }
+
+@media (max-width: 991px) {
+  .top_navbar { padding:0; /*border-bottom:none;*/ }
+  .top_navbar .navbar .navbar-collapse { margin-top:10px; border-top: solid 1px #53a6d5; }
+  .top_navbar .navbar a.navbar-brand img { height:40px; }
+  .top_navbar .navbar-nav { margin-top:0px;  }
+  .top_navbar .navbar-toggler { border:none; outline:none; background-color:#53a6d5; }
+  .top_navbar .navbar-light .navbar-toggler { border-color:#53a6d5; border:none!important; border-radius:0;  cursor: pointer; padding:0.25rem 0.5rem; position: absolute; right:0; top:14px;   }
+  .top_navbar .navbar-nav li:last-child { border-bottom:none;  }
+  .top_navbar .navbar-light .navbar-nav .nav-link { padding:5px 0; }
+  .top_navbar .navbar-light .navbar-nav .nav-link:hover { border: solid 1px #fff;  }
+  .top_navbar .navbar-light .navbar-nav .active > .nav-link,
+  .top_navbar .navbar-light .navbar-nav .nav-link.active,
+  .top_navbar .navbar-light .navbar-nav .nav-link.show,
+  .top_navbar .navbar-light .navbar-nav .show > .nav-link { padding:5px 0; color:#53a6d5; border: solid 1px #fff; }
+  .top_navbar .my-account-btn { margin-left:0; margin-bottom:20px !important; }
+  .top_navbar .navbar button:focus { border: none !important;  }
+  .top_navbar .navbar-light .navbar-toggler-icon { background: transparent; }
+  .top_navbar .navbar-light .navbar-toggler-icon .fa-bars { color: #fff; font-size:24px; padding-top:2px;    }
+  .banner { padding-top:90px; }
+  .banner .showcase h1 { font-size:36px; }
+  .why-buy-from-us-main { position: relative;  }
+  .new-letter-section .new-letter-form-box .form-group { width:100%; float: left; }
+  .btn-submit { margin:0; }
+  .who-we-are-section { margin:20px 0 0 0; }
+  .why-buy-from-us ul li { width:100%; }
+  .pharmachy-thumb { position: relative; width: auto; margin-bottom:4px; }
+  .other-treatments .fa-angle-right { right:30px; }
+  .about-planex-pharmacy { margin:40px 0 48px 0; }
+  .about-planex-pharmacy h2 { font-size:28px; }
+  .how-it-work-section { padding:50px 0; }
+  .how-it-work-section .how-it-work h2 { font-size:28px; }
+  .blog-section { margin:50px 0;   }
+  .blog-section .single-home-blog { width:100%; }
+  .blog-section .date-box { position: absolute; top:0; }
+  .newsletter h2 { font-size:16px; }
+  .single-widget { margin-top:24px; }
+  .single-widget-margin-top { margin-top:0; }
+  .about-pharmacy-section .about-pharmacy-conten h2 { font-size:28px; }
+  .about-pharmacy-section { margin:40px 0;  }
+  .out-team-section { padding:50px 0 0 0; }
+  .out-team-section .out-team-title h2 { font-size:28px; }
+  .about-banner-section { padding:40px 0 0 0;   }
+  .about-banner-section .about-banner-title h2 { font-size:36px; }
+  .faq-section { padding:50px 0 30px 0; }
+  .blog-section-box { margin:50px 0; }
+  .contact-form { margin-bottom:30px; }
+  .back-btn { margin:50px 0; }
+  .back-btn a { padding:15px 30px;  font-size:18px; }
+  .right-box { float:none; text-align: center; }
+  .page-not-found-box h2 { font-size:36px; }
+  .page-not-found-box h3 { font-size:36px; }
+  .treatments-section { margin:50px 0 10px 0; }
+  .patient-review-section { padding:50px 0; }
+  .patient-review h2 { font-size:28px; }
+  .patient-review p { font-size:16px; }
+  .client-img { position: relative; top:8px; left:0; height: 100px; text-align: center;}
+  .client-img .rounded-circle { border: solid 6px #6cc1f1; height: 120px; width:120px !important; margin:0 auto;  }
+  .patient-review-slide-box { padding:30px; }
+  .patient-review-slide-box::after { border-width:20px; margin-left:-20px; }
+  .reviews-page-section { margin:50px 0; }
+  .contact-section { margin:50px 0;}
+  .blog-detail-section { margin:50px 0;}
+  .blog-detail-left .share-post h2 { font-size:20px; }
+  .blog-detail-left .share-post .follow-us ul li a { font-size:18px; }
+  .blog-detail-left .comment { margin:20px 0; padding-bottom:0; }
+  .blog-detail-left .comment h2 { font-size:18px; margin-bottom:15px; }
+  .add-review-title-box h2 { font-size:18px; }
+  .reviews h2 { font-size:16px; }
+  .blog-detail-left .comment .comment-box .comment-contain h3 { font-size:16px; }
+  .blog-detail-left .leave-comment h2 { font-size:20px; margin-bottom:15px; }
+  .glob-categories h3 { padding:14px; }
+  .trainer-title { font-size:24px; line-height:30px; }
+  .btn-send { font-size:18px; }
+  .widget-title h2 { font-size:18px; }
+  .new-letter i { font-size:30px; }
+  .new-letter h2 { font-size:20px; top:4px; }
+  .new-letter-section { margin:30px 0; }
+  .new-letter-section .new-letter-form-box { margin-top:25px; }
+  .why-buy-from-us-main { padding:30px 18px; top:0;  }
+  .why-buy-from-us-main h2 { font-size:20px; margin:0; }
+  .who-we-are-section ul li a { font-size:16px; }
+  .blog-section-text { margin-bottom:20px !important;  }
+  .blog-section-text h2 { font-size:28px;  }
+  .patient-review-main-box { margin:0; padding:30px 0; }
+  .client-img { left:0; bottom:10px; }
+  .patient-review-section .owl-theme .owl-nav { top:50%; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-prev"] { left:-6%; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-next"] { right:-6%; }
+  .how-it-work-section .how-it-work-step-box h2 { font-size:24px; }
+  .treatments h2 { font-size:15px; }
+}
+
+@media (max-width: 767px) {
+  .why-buy-from-us-main .truspilot { margin: 0; position: relative; top:0; right:0; left: 0; bottom: 0; }
+  .about-planex-pharmacy h2 { font-size:24px; }
+  .blog-section .single-home-blog { margin-bottom:30px; }
+  .how-it-work-section { padding:50px 0 10px 0; }
+  .how-it-work-section .how-it-work-step-box { margin-bottom:40px; }
+  .how-it-work-section .how-it-work-step-box .icon-box { margin:20px auto; }
+  .how-it-work-section .how-it-work h2 { font-size:24px; }
+  .how-it-work-section .how-it-work p { font-size:15px; }
+  .how-it-work-section .dashed-border { display: none; }
+  .blog-section .single-home-blog .home-blog-details h2 a { font-size:15px;  }
+  .newsletter { margin-top:0; margin-bottom:15px; }
+  .single-widget { margin-top:24px; }
+  .single-widget-margin-top { margin-top:0; }
+  .about-pharmacy-section ul.about-pharmacy-list { margin-bottom:26px; }
+  .about-pharmacy-section .about-pharmacy-conten h2 { font-size:24px; }
+  .faq-section .panel-default h2 a { font-size:14px; }
+  .panel-title > a:before { margin-bottom:50px;}
+  .panel-title > a.collapsed::before { margin-bottom:30px;}
+  .add-review-box .form-group textarea { margin-top:15px; }
+  .contact-icon-box i { margin-bottom:10px; font-size:36px; }
+  .page-not-found-box { text-align: center; }
+  .blog-detail-left .leave-comment-from a { margin:15px 0 40px 0; padding:12px 24px; font-size:18px; font-weight: 600; text-transform: none; }
+  .blog-detail-left .blog-detail-contain p { margin-bottom:15px; }
+  .blog-detail-left .comment .comment-box { margin-bottom:10px; }
+  .row-margin-none { margin-right:-15px!important; }
+  .row-MarginNone { margin-left:0!important; margin-right:0!important; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-prev"] { left:-4%; }
+  .patient-review-section .owl-theme .owl-nav [class*="owl-next"] { right:-4%; }
+  .medication-usage-guide-list .youtube .youtube-btn { top:40%; }
+  .medication-usage-guide-list .youtube .img-thumbnail { width:100%; }
+  .banner { height:430px; position:relative; padding-top:75px;}
+  .banner:before{position:absolute; content:""; background-color:rgba(255,255,255,0.75); left:0; top:0; height:100%; width:100%;}
+
+}
+
+@media (max-width: 575px) {
+  .pharmachy-thumb { margin:0 0 4px 0; }
+  .other-treatments { margin:0 0 4px 0;  }
+  .other-treatments .fa-angle-right { right:30px; }
+  .single-widget { margin-top:24px; }
+  .about-pharmacy-section .about-pharmacy-conten h2 { font-size:24px; }
+  .about-pharmacy-section ul.about-pharmacy-list { width:100%; }
+  .about-pharmacy-section ul.about-pharmacy-list.left-ap-list { margin-bottom:0;}
+  .banner .showcase h1 { font-size:34px; }
+  .review-box { padding: 30px 30px 50px 30px; }
+  .review-box::after { left:84%; }
+  .reviews .img-thumbnail { height:70px; border:2px solid #2b96cc; }
+  .reviews { top:-26px; }
+  .reviews h2 { font-size:14px; top:42px; }
+}
