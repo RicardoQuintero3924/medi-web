@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Planex Pharmacy</title>
+    <title>MEDI-WEB PRODUCTOS</title>
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
 
     <!-- Bootstrap CSS -->
@@ -13,6 +14,8 @@
     <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
+
+
     <!-- carousel fadein fadeout CSS -->
     <link rel="stylesheet" href="css/carousel-fadein-fadeout.css">
 
@@ -20,11 +23,20 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Style JS -->
+    <link rel="stylesheet" href="js/main.js">
+
+    <!-- fonts for page-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +48,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
+
 <body>
     <!-- Begin wrapper -->
     <div class="wrapper">
@@ -44,8 +57,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <i class="fa fa-bars"></i>
                         </span>
@@ -63,10 +75,10 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.html">Nosotros</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>                       
+                            </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
@@ -83,12 +95,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
-                            <h2>Treatments</h2>
+                            <h2>PRODUCTOS</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">Treatments</li>
+                                    <li class="breadcrumb-item active"><a href="index.html">INICIO</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">PRODUCTOS</li>
                                 </ol>
                             </nav>
                         </div>
@@ -98,113 +110,113 @@
         </div>
         <!-- End Banner -->
         <!-- Begin Treatments Section -->
+        <nav class="menu_categoria contenedor-flex">
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Analgésicos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Antiácidos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Antialérgicos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Antidiarreicos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Antiinfecciosos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Antiinflamatorios</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Antitepirécos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-2 col-lg-3 categoria">
+                <a href="javascript:;">
+                    <div class="other-treatments">
+                        <img src="images/list-thumb.png" alt="" />
+                        <h2>Mucolíticos</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <!--FIN MENU CATEGORIAS-->
         <div class="treatments-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-lg-9">
+                    <div class="col-md-12 col-lg-12">
+
                         <div class="row row-margin-none">
+
                             <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Erectile Dysfunction</h2>
-                                    <img class="img-thumbnail" src="images/treatments-01.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
+                                <div class="treatments margen">
+                                    <h2>Acetaminofeno</h2>
+                                    <img class="img-thumbnail img-product" src="images/acetaminofe.jpg" alt="" />
+                                    <p class="parrafo">El acetaminofeno se encuentra en una clase de medicamentos llamados analgésicos.</p>
+                                    <h4>Valor: 2.000 COP</h4>
+                                    <h5 class="cantidad">Cantidad:<input type="number" min="0"></h5>
                                     <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Anti-Malaria Tablets</h2>
-                                    <img class="img-thumbnail" src="images/treatments-02.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Hair Loss Treatment</h2>
-                                    <img class="img-thumbnail" src="images/treatments-03.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
+                                <div class="treatments margen">
+                                    <h2>Aciclovir</h2>
+                                    <img class="img-thumbnail img-product" src="images/aciclovir.jpg" alt="" />
+                                    <p class="parrafo"> se usa para reducir el dolor y acelerar la curación de las heridas o ampollas en las personas que tienen varicela, herpes zóster</p>
+                                    <h4>Valor: 9.000 COP</h4>
+                                    <h5 class="cantidad">Cantidad:<input type="number" min="0"></h5>
                                     <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Period Delay Pills</h2>
-                                    <img class="img-thumbnail" src="images/treatments-04.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Period Delay</h2>
-                                    <img class="img-thumbnail" src="images/treatments-05.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Cystitis</h2>
-                                    <img class="img-thumbnail" src="images/treatments-06.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Stop Smoking</h2>
-                                    <img class="img-thumbnail" src="images/treatments-07.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Acid Reflux</h2>
-                                    <img class="img-thumbnail" src="images/treatments-08.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Premature Ejaculation</h2>
-                                    <img class="img-thumbnail" src="images/treatments-09.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Migraine Relief</h2>
-                                    <img class="img-thumbnail" src="images/treatments-10.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Unwanted Facial Hair</h2>
-                                    <img class="img-thumbnail" src="images/treatments-11.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                                <div class="treatments">
-                                    <h2>Period Delay Pills</h2>
-                                    <img class="img-thumbnail" src="images/treatments-04.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis.</p>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-3">
+                    <!-- <div class="col-md-4 col-lg-3">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row-MarginNone">
@@ -279,7 +291,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -456,7 +468,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright &#169; 2018 <a href="javascript:;">Planex Pharmacy</a>. All Rights Reserved.</p>
+                <p>Copyright &#169; 2018 <a href="javascript:;">MEDI-WEB</a>. TODOS LOS DERECHOS RESERVADOS.</p>
             </div>
         </div>
         <!-- End Footer Wrapper -->
@@ -465,7 +477,7 @@
 
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
-    
+
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
 
@@ -482,4 +494,5 @@
     <script src="js/custom.js"></script>
 
 </body>
+
 </html>
