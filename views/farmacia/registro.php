@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/w3.css" />
     <link rel="stylesheet" href="../../css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../css/estilos.css" />
-    <title>Registro tipo empleado</title>
+    <title>Registro farmacia</title>
 </head>
 
 <body>
@@ -21,8 +21,16 @@
         <div class="card" style="width: 50%; margin-left: auto; margin-right: auto;">
             <div class="card-body">
                 <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group">
                     <label for="descripcion">Descripcion</label>
                     <input type="text" class="form-control" id="descripcion">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion">
                 </div>
                 <div class="form-group">
                     <button class="btn btn-list" style="width: 120px;" id="enviar">Enviar</button>
@@ -34,7 +42,7 @@
 
 
     <script src="../../js/jquery.js"></script>
-    <script src="../../js/tipoEmpleado.js"></script>
+    <script src="../../js/farmacia.js"></script>
 
     <script>
         $(document).ready(function() {

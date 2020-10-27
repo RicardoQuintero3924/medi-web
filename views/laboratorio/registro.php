@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/w3.css" />
     <link rel="stylesheet" href="../../css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../css/estilos.css" />
-    <title>Registro tipo empleado</title>
+    <title>Registro laboratorio</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
 
 
     <script src="../../js/jquery.js"></script>
-    <script src="../../js/tipoEmpleado.js"></script>
+    <script src="../../js/laboratorio.js"></script>
 
     <script>
         $(document).ready(function() {

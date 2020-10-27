@@ -5,7 +5,7 @@ $(document).ready(function() {
 function listado() {
     $.ajax({
         type: 'GET',
-        url: '../../controllers/tipoEmpleadoController.php',
+        url: '../../controllers/laboratorioController.php',
         data: 'action=findAll',
         success: function(data) {
             debugger;
@@ -14,9 +14,9 @@ function listado() {
             for (let i = 0; i < result.length; i++) {
                 code += `<tr>;
                             <td>${result[i].descripcion}</td>
-                            <td><a class='btn btn-list' href='javascript:consultar(${result[i].id_tipo_empleado}, "modificar")'><i class="fa fa-refresh"></i></a></td>
-                            <td><a class='btn btn-list' href='javascript:consultar(${result[i].id_tipo_empleado}, "consulta")'><i class="fa fa-search"></i></a></td>
-                            <td><a class='btn btn-list' href='javascript:eliminar(${result[i].id_tipo_empleado})'><i class="fa fa-trash"></i></a></td>
+                            <td><a class='btn btn-list' href='javascript:consultar(${result[i].id_laboratorio}, "modificar")'><i class="fa fa-refresh"></i></a></td>
+                            <td><a class='btn btn-list' href='javascript:consultar(${result[i].id_laboratorio}, "consulta")'><i class="fa fa-search"></i></a></td>
+                            <td><a class='btn btn-list' href='javascript:eliminar(${result[i].id_laboratorio})'><i class="fa fa-trash"></i></a></td>
                         </tr>`;
             }
             $("#tbody").html(code);
@@ -35,7 +35,7 @@ function modificar() {
     }
     $.ajax({
         type: 'POST',
-        url: '../../controllers/tipoEmpleadoController.php',
+        url: '../../controllers/laboratorioController.php',
         data: data,
         success: function(data) {
             listado();
@@ -49,22 +49,21 @@ function modificar() {
 }
 
 function consultar(id, tipo) {
-
     $.ajax({
         type: 'POST',
-        url: '../../controllers/tipoEmpleadoController.php',
+        url: '../../controllers/laboratorioController.php',
         data: 'id=' + id + '&action=findById',
         success: function(data) {
+            debugger;
             let result = JSON.parse(data);
             debugger;
             if (tipo == 'consulta') {
                 let code = "";
                 code += `<ul class='list-group list-group-flush'>
-                    <li class="list-group-item"><b>Id</b> : ${result[0].id_tipo_empleado}</li>
+                    <li class="list-group-item"><b>Id</b> : ${result[0].id_laboratorio}</li>
                     <li class="list-group-item"><b>Descripción</b> : ${result[0].descripcion}</li>
                 </ul>`
-
-                $("#titleModal").html("Consulta de tipo de empleado");
+                $("#titleModal").html("Consulta de laboratorios");
                 $("#bodyModal").html(code);
                 $("#btnMod").css("display", "none");
                 $("#modal").modal('show');
@@ -80,11 +79,11 @@ function consultar(id, tipo) {
                         <input type="text" class="form-control" id="descripcion">
                     </div>`
 
-                $("#titleModal").html("Modificar tipo de empleado");
+                $("#titleModal").html("Modificar laboratorio");
                 $("#bodyModal").html(code);
                 $("#btnMod").css("display", "block");
                 $("#modal").modal('show');
-                $("#id").val(result[0].id_tipo_empleado);
+                $("#id").val(result[0].id_laboratorio);
                 $("#descripcion").val(result[0].descripcion);
             }
         },
@@ -99,7 +98,7 @@ function eliminar(id) {
     if (confirmacion) {
         $.ajax({
             type: 'POST',
-            url: '../../controllers/tipoEmpleadoController.php',
+            url: '../../controllers/laboratorioController.php',
             data: 'id=' + id + '&action=delete',
             success: function(data) {
                 alert(data);
@@ -120,7 +119,7 @@ $("#enviar").click(() => {
     }
     $.ajax({
         type: 'POST',
-        url: '../../controllers/tipoEmpleadoController.php',
+        url: '../../controllers/laboratorioController.php',
         data: data,
         success: function(data) {
             alert(data);

@@ -1,4 +1,9 @@
+$(document).ready(function() {
+    listado();
+});
+
 function listado() {
+    debugger;
     $.ajax({
         type: 'GET',
         url: '../../controllers/empleadoController.php',
@@ -14,9 +19,9 @@ function listado() {
                             <td>${result[i].fecha_nacimiento}</td>
                             <td>${result[i].correo_electronico}</td>
                             <td>${result[i].tipoEmpleado}</td>
-                            <td><button class="btn btn-primary" onclick='consultar(${result[i].id_empleado}, "modificar")'>Modificar</button></td>
-                            <td><button class="btn btn-info" onclick='consultar(${result[i].id_empleado}, "consulta")'>Consultar</button></td>
-                            <td><button class="btn btn-danger" onclick='eliminar(${result[i].id_empleado})' >Eliminar</button></td>
+                            <td><a  class="btn btn-list" href='javascript:consultar(${result[i].id_empleado}, "modificar")'><i class="fa fa-refresh"></i></a></td>
+                            <td><a  class="btn btn-list" href='javascript:consultar(${result[i].id_empleado}, "consulta")'><i class="fa fa-search"></i></a></td>
+                            <td><a  class="btn btn-list" href='javascript:eliminar(${result[i].id_empleado})' ><i class="fa fa-trash"></i></a></td>
                         </tr>`;
             }
             $("#tbody").html(code);
@@ -28,7 +33,7 @@ function listado() {
 }
 
 function eliminar(id) {
-    let confirmacion = confirm('Esta seguro de eliminar este registro');
+    let confirmacion = confirm('¿Esta seguro de eliminar este registro?');
     if (confirmacion) {
         $.ajax({
             type: 'POST',
