@@ -1,3 +1,19 @@
+<?php
+require_once 'includes/controlador/cProducto.php';
+$controlProducto = new controlProducto();
+
+try {
+    require_once 'db/Conexion.php';
+    $sql = "SELECT id_categoria, descripcion FROM categorias";
+    $categorias = $conection->query($sql);
+} catch (PDOException $ex) {
+    die($ex->getMessage());
+}
+
+
+
+
+?>
 <!DOCTYPE HTML>
 <html lang="es">
 
@@ -13,9 +29,6 @@
 
     <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
-
-
-
     <!-- carousel fadein fadeout CSS -->
     <link rel="stylesheet" href="css/carousel-fadein-fadeout.css">
 
@@ -27,13 +40,14 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-
+    <link rel="stylesheet" href="js/main.js">
+    <script src="js/jquery-3.5.1.min.js"></script>
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Style JS -->
-    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="">
 
     <!-- fonts for page-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
@@ -50,6 +64,7 @@
 </head>
 
 <body>
+    
     <!-- Begin wrapper -->
     <div class="wrapper">
         <!-- Begin Top Navbar -->
@@ -111,80 +126,47 @@
         <!-- End Banner -->
         <!-- Begin Treatments Section -->
         <nav class="menu_categoria contenedor-flex">
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Analgésicos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Antiácidos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Antialérgicos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Antidiarreicos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Antiinfecciosos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Antiinflamatorios</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Antitepirécos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-2 col-lg-3 categoria">
-                <a href="javascript:;">
-                    <div class="other-treatments">
-                        <img src="images/list-thumb.png" alt="" />
-                        <h2>Mucolíticos</h2>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </a>
-            </div>
+            <?PHP foreach ($categorias as $cat) : ?>
+                <div class="col-sm-2 col-lg-3 categoria">
+                    <a id="click">
+                        <div class="other-treatments">
+                            <img src="images/list-thumb.png" alt="" />
+                            <h6 style="" ><?php echo $cat['id_categoria'] ?></h6>
+                            <h2><?php echo $cat['descripcion']; ?></h2>
+                            <!-- <input class="oculto" type="hidden" value=""> -->
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <?php
+                $id_categoria = $cat['id_categoria'];
+                
+                $busca = $controlProducto->buscarPorCategoria($id_categoria);
+                ?>
+               
+     
+            <?php endforeach; ?>
+            
+            <?php foreach($cat as $id):
+                var_dump($id);
+                
+            endforeach; ?>
         </nav>
+        <?php var_dump($cat); ?>
+        <script>
+        $(document).ready(function() {
+            $(".categoria").on('click', function(){
+              var categoria =  $(".categoria h6").text();
+                console.log(categoria);
+                alert("hola bb has dado click");
+                
+
+            });
+            
+        });
+        </script>
         <!--FIN MENU CATEGORIAS-->
+      
         <div class="treatments-section">
             <div class="container">
                 <div class="row">
@@ -216,82 +198,6 @@
 
                         </div>
                     </div>
-                    <!-- <div class="col-md-4 col-lg-3">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row-MarginNone">
-                                    <div class="right-panel">
-                                        <div class="general-pharmaceutical">
-                                            <a class="img-fluid" href="javascript:;"><img src="images/general-pharmaceutical.jpg" alt="" /></a>
-                                            <a class="img-fluid" href="javascript:;"><img src="images/registered-pharmacy.jpg" alt="" /></a>
-                                        </div>
-                                        <div class="background-gray-bg-main">
-                                            <div class="why-buy-form-box">
-                                                <h2>Why buy from us ?</h2>
-                                                <div class="trustpilot-box">
-                                                    <a href="javascript:;"><img src="images/trustpilot-img.png" alt="" /></a>
-                                                    <h2><a href="javascript:;">Planex Pharmacy</a><br> Reviews on Trustpilot</h2>
-                                                    <p> </p>
-                                                </div>
-                                                <div class="pharmacy-list">
-                                                    <ul>
-                                                        <li><a href="javascript:;">Registered Pharmacy</a></li>
-                                                        <li><a href="javascript:;">Fast and discreet delivery</a></li>
-                                                        <li><a href="javascript:;">Licensed by NHS regulator</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="who-we-are-main-box">
-                                                <h2><i class="fa fa-medkit"></i>who we are</h2>
-                                                <div class="list-link">
-                                                    <ul>
-                                                        <li><a href="javascript:;">Registered Pharmacy</a></li>
-                                                        <li><a href="javascript:;">Fast and discreet delivery</a></li>
-                                                        <li><a href="javascript:;">Licensed by NHS regulator</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="medication-usage-guide-list">
-                                                <h2>Medication usage guide</h2>
-                                                <div class="youtube">
-                                                    <div class="youtube-btn">
-                                                        <a href="javascript:;"><img src="images/youtube-btn.png" alt="" /></a>
-                                                    </div>
-                                                    <img class="img-thumbnail" src="images/youtube.jpg" alt="" />
-                                                </div>
-                                                <div class="medication-list">
-                                                    <ul>
-                                                        <li><a href="javascript:;">Anti-Malaria Tablets</a></li>
-                                                        <li><a href="javascript:;">Hair Loss Treatment</a></li>
-                                                        <li><a href="javascript:;">Period Delay Pills</a></li>
-                                                        <li><a href="javascript:;">Period Delay</a></li>
-                                                        <li><a href="javascript:;">Cystitis</a></li>
-                                                        <li><a href="javascript:;">Stop Smoking</a></li>
-                                                        <li><a href="javascript:;">Acid Reflux</a></li>
-                                                        <li><a href="javascript:;">Premature Ejaculation</a></li>
-                                                        <li><a href="javascript:;">Migraine Relief</a></li>
-                                                        <li><a href="javascript:;">Unwanted Facial Hair</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="who-we-are-main-box">
-                                                <h2>Latest Post</h2>
-                                                <img class="img-thumbnail" src="images/latest-img.jpg" alt="" />
-                                                <div class="latest-post">
-                                                    <p>May 11, 2017</p>
-                                                    <h2>Quisque suscipit ullamcorper ultrice Nunc accumsan lorem ispum...</h2>
-                                                    <a href="blog-detail.html">Read More <i class="fa fa-angle-right"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="view-all-post">
-                                                <a href="blog.html">View all post</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -476,7 +382,7 @@
     <!-- End wrapper -->
 
     <!-- jquery latest version -->
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
 
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
