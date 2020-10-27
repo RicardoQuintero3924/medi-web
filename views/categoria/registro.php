@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/w3.css" />
     <link rel="stylesheet" href="../../css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../css/estilos.css" />
-    <title>Registro tipo empleado</title>
+    <title>Registro categoría</title>
 </head>
 
 <body>
@@ -34,11 +34,12 @@
 
 
     <script src="../../js/jquery.js"></script>
-    <script src="../../js/tipoEmpleado.js"></script>
+    <script src="../../js/categoria.js"></script>
 
     <script>
         $(document).ready(function() {
             $(".add").css("display", "none");
+            $(".list").css("display", "block");
         });
     </script>
 

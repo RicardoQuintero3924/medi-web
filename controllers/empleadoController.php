@@ -7,8 +7,8 @@ if (!empty($_POST)) {
         case 'delete':
             include '../db/Conexion.php';
             $id = $_POST['id'];
-            if (!$result = mysqli_query($conection, "DELETE FROM empleados WHERE id_empleado = '$id'")) die();
-            echo 'Empleado eliminado';
+            if (!$result = mysqli_query($conection, "UPDATE empleados set estado = 0 WHERE id_empleado = '$id'")) die();
+            echo 'Empleado inhabilitado';
             break;
         case 'findById':
             include '../db/Conexion.php';

@@ -91,3 +91,28 @@ html {
     border-radius: 2px;
     border-color: var(--titulo);
 }
+
+.btn-list {
+    transition: transform .2s;
+    border: 1px solid #53a6d5;
+    color: #53a6d5
+}
+
+.btn-list:hover {
+    transform: scale(1.1);
+    color: #53a6d5;
+}
+
+.titulo-tabla-list,
+.titulo-list {
+    color: var(--colorPrincipal);
+}
+
+.titulo-list {
+    font-weight: 600;
+}
+
+#titleModal {
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
