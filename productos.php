@@ -36,15 +36,10 @@
     <!-- fonts for page-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -63,6 +58,9 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <button class="nav-link"><label id="numCarrito"></label><i class="fas fa-cart-plus"></i></button>
+                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                             </li>
@@ -117,7 +115,7 @@
                     <div class="col-md-12 col-lg-12">
 
                         <div class="row row-margin-none" id="list-productos">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -241,7 +239,6 @@
                             <div class="footer">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="treatments.html">Treatments</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="faq.html">FAQ</a></li>
                                     <li><a href="reviews.html">Reviews</a></li>
@@ -310,14 +307,16 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/custom.js"></script>
     <script>
+        var arrayCarrito = [];
+        var conCarrito = 0;
         $(document).ready(function() {
-            debugger;
+
             $.ajax({
                 type: 'GET',
                 url: 'controllers/productoController.php',
                 data: 'action=findAll',
                 success: function(data) {
-                    debugger;
+
                     let result = JSON.parse(data);
                     let code = "";
                     for (let i = 0; i < result.length; i++) {
@@ -341,14 +340,14 @@
             });
         });
 
-        function click(id){
+        function click(id) {
 
             $.ajax({
                 type: 'POST',
                 url: 'controllers/productoController.php',
                 data: 'id=' + id + '&action=findById',
                 success: function(data) {
-                    debugger;
+
                     let result = JSON.parse(data);
                     let code = "";
                     for (let i = 0; i < result.length; i++) {
@@ -359,9 +358,9 @@
                                     <img class="img-thumbnail img-product" src="${result[i].imagen}" alt="" />
                                     <p class="parrafo">${result[i].descripcion}</p>
                                     <h4>Valor: ${result[i].precio} COP</h4>
-                                    <h5 class="cantidad">Cantidad:<input type="number" min="0"></h5>
-                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
-                                </div>
+                                    <h5 class="cantidad">Cantidad:<input type="number" min="0" id="cantidad${i}"></h5>
+                                    <button onclick="addCarrito(${result[i].id_medicamento}, ${i})">Añadir al carrito</button>
+                                    </div>
                             </div>
                         `;
                     }
@@ -373,7 +372,77 @@
             });
         }
 
-        
+        function addCarrito(id, numCantidad) {
+            debugger;
+            $.ajax({
+                type: 'POST',
+                url: 'controllers/productoController.php',
+                data: 'id=' + id + '&action=findByIdxMedi',
+                success: function(data) {
+                    debugger;
+                    let result = JSON.parse(data);
+                    let cantidad = $(`#cantidad${numCantidad}`).val();
+                    if (result[0].stock < cantidad) {
+                        return alert("Stock insuficiente");
+                    } else {
+                        $.ajax({
+                            type: 'POST',
+                            url: 'controllers/productoController.php',
+                            data: 'id=' + id + '&cantidad=' + cantidad + '&action=updateStock',
+                            success: function(data) {
+                                if (data) {
+                                    let obj = {
+                                        "id": id,
+                                        "cantidad": cantidad
+                                    }
+                                    arrayCarrito.push(obj);
+                                    $("#numCarrito").text(++conCarrito);
+                                }
+                            },
+                            error: function() {
+                                alert("Error");
+                            }
+                        });
+                    }
+                },
+                error: function() {
+                    alert("Error");
+                }
+            });
+        }
+
+        $("#numCarrito").click(function() {
+            debugger;
+            for (let i = 0; i < arrayCarrito.length; i++) {
+                let obj = {
+                    "id": arrayCarrito[i].id,
+                    "cantidad": arrayCarrito[i].cantidad,
+                    "codigo" : create_UUID(),
+                    "action": "insert"
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: 'controllers/productoController.php',
+                    data: obj,
+                    success: function(data) {
+                        $(location).attr('href', `carrito.html?codigo=${data}`);
+                    },
+                    error: function() {
+                        alert("Error");
+                    }
+                });
+            }
+        });
+
+        function create_UUID() {
+            var dt = new Date().getTime();
+            var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = (dt + Math.random() * 16) % 16 | 0;
+                dt = Math.floor(dt / 16);
+                return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+            });
+            return uuid;
+        }
     </script>
 
 </body>
