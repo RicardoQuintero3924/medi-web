@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+
+    <title>Registro de clientes</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="correoElectronico">Correo electronico</label>
+                <input type="email" name="correoElectronico" id="correoElectronico" placeholder="Correo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="form-control" />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <button id="btn">Enviar</button>
+        </div>
+
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $("#btn").click(() => {
+            debugger;
+            let cliente = {
+                "nombre": $("#nombre").val(),
+                "apellido": $("#apellido").val(),
+                "correoElectronico": $("#correoElectronico").val(),
+                "fechaNacimiento": $("#fechaNacimiento").val(),
+                "direccion": $("#direccion").val(),
+                "contrasena": $("#contraseña").val(),
+                "action": "insert"
+            }
+            $.ajax({
+                type: 'POST',
+                url: "../../controllers/clienteController.php",
+                data: cliente,
+                success: function(data) {
+                    debugger;
+                    alert(data)
+                },
+                error: function() {
+                    alert("Error");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Planex Pharmacy</title>
+    <title>MEDI-WEB PRODUCTOS</title>
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
 
     <!-- Bootstrap CSS -->
@@ -13,7 +13,6 @@
 
     <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
-
     <!-- carousel fadein fadeout CSS -->
     <link rel="stylesheet" href="css/carousel-fadein-fadeout.css">
 
@@ -21,11 +20,21 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="js/main.js">
+    <script src="js/jquery-3.5.1.min.js"></script>
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Style JS -->
+    <link rel="stylesheet" href="">
+
+    <!-- fonts for page-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,16 +48,22 @@
 </head>
 
 <body>
+
     <!-- Begin wrapper -->
     <div class="wrapper">
         <!-- Begin Top Navbar -->
         <header id="top" class="top_navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
+<<<<<<< HEAD:treatments.html
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%"
                             alt="" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+=======
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> master:productos.php
                         <span class="navbar-toggler-icon">
                             <i class="fa fa-bars"></i>
                         </span>
@@ -76,11 +91,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
                             </li>
+<<<<<<< HEAD:treatments.html
                         </ul>
                         <ul class="navbar-nav">
                             <form action="buscar.php" class="Navbar">
                                 <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
                             </form>
+=======
+>>>>>>> master:productos.php
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
@@ -98,12 +116,21 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
+<<<<<<< HEAD:treatments.html
                             <h2>Productos</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
                                     <li class="breadcrumb-item" aria-current="page">Productos</li>
+=======
+                            <h2>PRODUCTOS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html">INICIO</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">PRODUCTOS</li>
+>>>>>>> master:productos.php
                                 </ol>
                             </nav>
                         </div>
@@ -113,9 +140,12 @@
         </div>
         <!-- End Banner -->
         <!-- Begin Treatments Section -->
+        <nav class="menu_categoria contenedor-flex" id="list-categorias"></nav>
+
         <div class="treatments-section">
             <div class="container">
                 <div class="row">
+<<<<<<< HEAD:treatments.html
                     <div class="col-md-8 col-lg-9">
                         <div class="row row-margin-none">
                             <div class="col-sm-6 col-md-6 col-lg-4">
@@ -312,6 +342,12 @@
                                     </div>
                                 </div>
                             </div>
+=======
+                    <div class="col-md-12 col-lg-12">
+
+                        <div class="row row-margin-none" id="list-productos">
+                            
+>>>>>>> master:productos.php
                         </div>
                     </div>
                 </div>
@@ -500,30 +536,93 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright &#169; 2018 <a href="javascript:;">Planex Pharmacy</a>. All Rights Reserved.</p>
+                <p>Copyright &#169; 2018 <a href="javascript:;">MEDI-WEB</a>. TODOS LOS DERECHOS RESERVADOS.</p>
             </div>
         </div>
         <!-- End Footer Wrapper -->
     </div>
-    <!-- End wrapper -->
 
+<<<<<<< HEAD:treatments.html
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
 
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
+=======
+>>>>>>> master:productos.php
 
-    <!-- bootstrap.min js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- owl.carousel.min js -->
     <script src="js/owl.carousel.min.js"></script>
-
-    <!-- ie10 viewport bug-workaround js -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-    <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            debugger;
+            $.ajax({
+                type: 'GET',
+                url: 'controllers/productoController.php',
+                data: 'action=findAll',
+                success: function(data) {
+                    debugger;
+                    let result = JSON.parse(data);
+                    let code = "";
+                    for (let i = 0; i < result.length; i++) {
+                        code += `
+                        <div class="col-sm-2 col-lg-3 categoria">
+                            <a id="click" href="javascript:click(${result[i].id_categoria})">
+                                <div class="other-treatments">
+                                    <img src="images/list-thumb.png" alt="" />
+                                    <h2>${result[i].descripcion}</h2>
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        `;
+                    }
+                    $("#list-categorias").html(code);
+                },
+                error: function() {
+                    alert("Error");
+                }
+            });
+        });
+
+        function click(id){
+
+            $.ajax({
+                type: 'POST',
+                url: 'controllers/productoController.php',
+                data: 'id=' + id + '&action=findById',
+                success: function(data) {
+                    debugger;
+                    let result = JSON.parse(data);
+                    let code = "";
+                    for (let i = 0; i < result.length; i++) {
+                        code += `
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments margen">
+                                    <h2>${result[i].nombre_comercial}</h2>
+                                    <img class="img-thumbnail img-product" src="${result[i].imagen}" alt="" />
+                                    <p class="parrafo">${result[i].descripcion}</p>
+                                    <h4>Valor: ${result[i].precio} COP</h4>
+                                    <h5 class="cantidad">Cantidad:<input type="number" min="0"></h5>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    $("#list-productos").html(code);
+                },
+                error: function() {
+                    alert("Error");
+                }
+            });
+        }
+
+        
+    </script>
 
 </body>
 
