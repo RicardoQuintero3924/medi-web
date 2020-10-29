@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Planex Pharmacy</title>
+    <title>Medi-Web</title>
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
 
     <!-- Bootstrap CSS -->
@@ -29,6 +30,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
+
 <body>
     <!-- Begin wrapper -->
     <div class="wrapper">
@@ -36,7 +38,8 @@
         <header id="top" class="top_navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%"
+                            alt="" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
@@ -45,24 +48,36 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="treatments.html">Productos</a>
+                                <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="navbardrop"
+                                    data-toggle="dropdown">Categorias</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item nav-item" href="treatments.html">Productos 1</a>
+                                    <a class="dropdown-item" href="#">Productos 2</a>
+                                    <a class="dropdown-item" href="#">Productos 3</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.html">Nosotros</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>                       
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <form action="buscar.php" class="Navbar">
+                                <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
+                            </form>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
+                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
+                                    Sesion</a>
                             </li>
                         </ul>
                     </div>
@@ -76,11 +91,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
-                            <h2>FAQ</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h2>Preguntas Frecuentes</h2>
+                            <p>¿Tienes alguna duda?</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
                                     <li class="breadcrumb-item" aria-current="page">Faq</li>
                                 </ol>
                             </nav>
@@ -99,105 +114,180 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix" role="tab" id="headingOne">
                                     <h2 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                          Lorem ipsum dolor sit amet  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            ¿Puedo ver el sito de Medi-web desde mi Smartphone o Tablet?
                                         </a>
                                     </h2>
                                 </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis molestie tellus eget posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper nisi et massa viverra laoreet. Curabitur
-                                            arcu elit, congue nec mollis vel, tristique vel lacus. Vestibulum vel interdum dui. Duis volutpat malesuada erat et imperdiet. Quisque nibh diam, maximus eget lectus a, volutpat viverra massa. Aenean bibendum
-                                            condimentum massa, sit amet congue metus porttitor bibendum. Quisque ullamcorper libero elit, eu lobortis risus vestibulum non. Nulla a felis vitae sapien malesuada bibendum sit amet ac lorem. </p>
+                                        <p style="text-align: justify">Sí, nuestro sitio está optimizado para que puedas
+                                            verlo desde cualquier
+                                            dispositivo móvil o tableta. </p>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix" role="tab" id="headingTwo">
                                     <h2 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                          Proin condimentum fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies risus vel sapien.
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwo" aria-expanded="false" aria-controls="collapsTwo">
+                                            ¿Cuántas categorías existen dentro del sitio?
                                         </a>
                                     </h2>
                                 </div>
-                                <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                        <p>Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
-                                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies risus vel sapien facilisis facilisis.
-                                            Sed velit nulla, vestibulum ut ligula sed, efficitur interdum ipsum. Praesent eget sem nisl.</p>
-                                        <p>Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
-                                            amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                                        <p></p>
+                                        <p style="text-align: justify">Existen 9 categorías: Medicamentos, Equipo y
+                                            botiquín; Vitaminas y Suplementos; Dermocosméticos; Cuidado personal y
+                                            belleza; Bebés; Alimentos y bebidas; Salud Sexual; y Salud Natural. </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix" role="tab" id="headingThree">
                                     <h2 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet.
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            ¿Para qué sirven las categorías?
                                         </a>
                                     </h2>
                                 </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingThree">
                                     <div class="panel-body">
-                                        <p>Etiam id nibh risus. Maecenas finibus, nisl ut fermentum sagittis, tortor nunc efficitur arcu, eu ultricies ante sapien et augue. Pellentesque non lectus ac ante suscipit maximus. Vivamus dapibus, sem ut vehicula
-                                            hendrerit, justo urna molestie felis, non gravida magna lorem eget est. Ut nisi dui, auctor a eros id, suscipit ullamcorper leo. Sed vulputate, urna imperdiet vulputate vulputate, ligula sem pellentesque arcu,
-                                            semper pellentesque eros justo sit amet dui.</p>
+                                        <p style="text-align: justify">Las categorías te ayudarán a conocer todos los
+                                            productos que forman parte de una misma clasificación y para navegar entre
+                                            ellas debes dar clic sobre el ícono de cualquiera de nuestras 9 categorías.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix" role="tab" id="headingFour">
                                     <h2 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                          Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            ¿Cómo encuentro mi farmacia más cercana?
                                         </a>
                                     </h2>
                                 </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingFour">
                                     <div class="panel-body">
-                                        <p>Vestibulum sagittis efficitur nulla ut facilisis. Nullam at elementum enim. Etiam sit amet ipsum risus. Duis aliquet varius diam nec maximus. Integer lorem dui, sollicitudin sit amet auctor sit amet, tempus vitae
-                                            libero. Pellentesque eu lacinia sapien. In auctor a neque iaculis condimentum. Aliquam sed pharetra urna. Donec eu odio ac metus pellentesque finibus. Aenean dignissim ut odio ut eleifend.</p>
-                                        <p>Praesent tincidunt nibh eget suscipit placerat. Nam nec imperdiet arcu. Nullam in euismod nibh, at varius ex. Ut at ligula placerat, euismod metus nec, gravida velit. Sed turpis felis, commodo in efficitur sit amet,
-                                            ultricies non massa. Integer sed ultrices metus. Quisque pulvinar massa sit amet sagittis tempus. Nullam scelerisque, urna sed aliquet posuere, tellus orci tincidunt justo, eget efficitur dui enim quis purus.
-                                            Vivamus nunc ipsum, ultricies sed dolor faucibus, venenatis venenatis eros.</p>
+                                        <p style="text-align: justify">Da clic en la opción Contacto ubicada en el menú
+                                            superior y deslízate hasta la parte del mapa para poder ubicar tu farmacia
+                                            más cercana.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix" role="tab" id="headingFive">
                                     <h2 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                          Praesent ultricies risus vel sapien facilisis facilisis. Sed velit nulla, vestibulum ut ligula sed, efficitur interdum ipsum.
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            ¿Cómo realizo un pedido?
                                         </a>
                                     </h2>
                                 </div>
-                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingFive">
                                     <div class="panel-body">
-                                        <p>Morbi sodales mi porta diam sagittis, sit amet suscipit arcu sagittis. Mauris tincidunt blandit quam, eu condimentum eros fermentum nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                                            ac turpis egestas. Sed feugiat vehicula magna ut maximus.</p>
-                                        <p>Sed vitae bibendum lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc turpis nunc, iaculis vitae ipsum interdum, eleifend tincidunt nibh. Duis suscipit consequat
-                                            lacus, et pretium massa tristique fermentum. Suspendisse nec tortor eget libero suscipit tristique ac vel ligula. </p>
+                                        <p style="text-align: justify">Busca un artículo, usando la barra de búsqueda.
+                                            Da clic en el botón “Agregar” para que el artículo se incluya en tu carrito
+                                            (en caso de que quieras ver la descripción completa del producto da clic
+                                            sobre la imagen del producto). Da clic en “Realizar compra”. Posteriormente,
+                                            selecciona la dirección de envío, enseguida selecciona una forma de entrega
+                                            (Entrega inmediata o programada).
+                                        </p>
+                                        <p style="text-align: justify">En el caso de medicamentos controlados
+                                            (estupefacientes y Psicotrópicos) la compra deberás realizarla directamente
+                                            en el mostrador de farmacia. En el caso de medicamentos antibióticos el
+                                            portal te pedirá que ingreses la información de la receta médica (Cédula y
+                                            nombre del Médico), una vez registrados estos datos, da clic en Continuar.
+                                            Enseguida selecciona una forma de pago (efectivo o tarjeta electrónica), en
+                                            caso que requieras facturar da clic en ¿Deseas generar tu factura ahora?, de
+                                            lo contrario podrás solicitarla después. Ya que seleccionaste la forma de
+                                            pago, da clic en Finalizar compra. Para realizar una compra es necesario que
+                                            tengas una cuenta en el sitio y que tengas tu sesión abierta.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading clearfix" role="tab" id="headingSix">
                                     <h2 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                          Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos.
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            ¿Cuántos productos puedo agregar al carrito de compras?
                                         </a>
                                     </h2>
                                 </div>
-                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingSix">
                                     <div class="panel-body">
-                                        <p>Aliquam lorem risus, placerat sed elit vel, hendrerit elementum turpis. Aenean arcu lorem, condimentum at lorem et, pretium elementum metus. Etiam quis tempus elit, ut ultricies arcu. Pellentesque condimentum viverra
-                                            erat, ut iaculis orci ullamcorper quis. Quisque quis sodales massa, nec mollis nisl. Pellentesque quis tincidunt mauris, lobortis maximus quam. Vivamus risus ipsum, posuere non tellus vitae, tristique vestibulum
-                                            leo.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis molestie tellus eget posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper nisi et massa viverra laoreet. Curabitur
-                                            arcu elit, congue nec mollis vel, tristique vel lacus. Vestibulum vel interdum dui. Duis volutpat malesuada erat et imperdiet. Quisque nibh diam, maximus eget lectus a, volutpat viverra massa. Aenean bibendum
-                                            condimentum massa, sit amet congue metus porttitor bibendum. Quisque ullamcorper libero elit, eu lobortis risus vestibulum non.</p>
+                                        <p style="text-align: justify">El número que desees.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading clearfix" role="tab" id="headingSeven">
+                                    <h2 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            ¿Puedo comprar medicamentos controlados sin receta médica?
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingSeven">
+                                    <div class="panel-body">
+                                        <p style="text-align: justify">No, debido a que: - La legislación mexicana y la
+                                            autoridad obligan a que solo se vendan presentando receta médica, o en su
+                                            caso retenerla. - Se recomienda siempre presentar su receta médica. - Los
+                                            antibióticos que requieren receta médica si pueden ser entregados en
+                                            domicilio siempre y cuando el Cliente entregue la receta médica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading clearfix" role="tab" id="headingEight">
+                                    <h2 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                            ¿Cómo veo el contenido de mi carrito de compra?
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingEight">
+                                    <div class="panel-body">
+                                        <p style="text-align: justify">Da clic en el ícono de carrito ubicado en la
+                                            parte superior derecha de la pantalla. Para realizar una compra, es
+                                            necesario que tengas una cuenta en nuestro sitio. Puedes crear una dando
+                                            clic en el botón “Perfil ” ubicado en la parte superior derecha de la
+                                            pantalla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading clearfix" role="tab" id="headingNine">
+                                    <h2 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                            ¿Cuáles son las formas de pago válidas?
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingNine">
+                                    <div class="panel-body">
+                                        <p style="text-align: justify">Efectivo, pago con tarjeta de crédito y débito
+                                            (VISA y MASTERCARD) y AMEX.</p>
                                     </div>
                                 </div>
                             </div>
@@ -207,22 +297,21 @@
             </div>
         </div>
         <!-- End Faq Section -->
-
         <!-- Begin Newsletter -->
         <div class="newsletter-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
                         <div class="newsletter">
-                            <h2>Subscribe to our newsletter and stay updated on the latest news.</h2>
+                            <h2>Suscríbete a nuestro newsletter y recibe ofertas cada semana.</h2>
                         </div>
                     </div>
                     <div class="col-md-5">
                         <div class="newsletter-form-box">
                             <form>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="Email" placeholder="Email Address">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -241,24 +330,28 @@
                                 <div class="align-items-center">
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" /></div>
-                                            <input type="text" class="form-control" id="name" placeholder="Name">
+                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" />
+                                            </div>
+                                            <input type="text" class="form-control" id="name" placeholder="Nombre">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" /></div>
-                                            <input type="text" class="form-control" id="email" placeholder="Email">
+                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" />
+                                            </div>
+                                            <input type="email" class="form-control" id="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
-                                            <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                            <div class="input-group-addon"><img class="message-img"
+                                                    src="images/message-icon.png" alt="" /></div>
+                                            <textarea class="form-control" id="message"
+                                                placeholder="Mensaje"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-form-box">
-                                        <button type="submit" class="btn btn-block btn-send">Send</button>
+                                        <button type="submit" class="btn btn-block btn-send">Enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -267,17 +360,15 @@
                     <div class="col-sm-6 col-md-6 col-lg-2 col-xl-3">
                         <div class="single-widget single-widget-margin-top">
                             <div class="widget-title">
-                                <h2>Site Links</h2>
+                                <h2>Enlaces del Sitio</h2>
                             </div>
                             <div class="footer">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="treatments.html">Treatments</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="treatments.html">Productos</a></li>
+                                    <li><a href="about-us.html">Nosotros</a></li>
                                     <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="reviews.html">Reviews</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -285,17 +376,16 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <div class="single-widget">
                             <div class="widget-title">
-                                <h2>Quick Links</h2>
+                                <h2>Enlaces Rápidos</h2>
                             </div>
                             <div class="footer">
                                 <ul>
-                                    <li><a href="javascript:;">My Account</a></li>
-                                    <li><a href="javascript:;">Pricing</a></li>
-                                    <li><a href="javascript:;">Delivery</a></li>
-                                    <li><a href="javascript:;">Terms and Conditions</a></li>
-                                    <li><a href="javascript:;">Privacy Policy</a></li>
-                                    <li><a href="javascript:;">Site map</a></li>
-
+                                    <li><a href="javascript:;">Mi Cuenta</a></li>
+                                    <li><a href="javascript:;">Términos y Condiciones</a></li>
+                                    <li><a href="javascript:;">Política de Privacidad</a></li>
+                                    <li><a
+                                            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481728.8046506293!2d-99.42382104334501!3d19.390519015859844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1603566461847!5m2!1ses!2smx;">Mapa</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -303,23 +393,28 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="single-widget">
                             <div class="widget-title">
-                                <h2>Contact</h2>
+                                <h2>Contacto</h2>
                             </div>
                             <div class="footer">
-                                <p><span>Address :</span><br> 17 Lorem Road,<br> Lorem ipusm, USA, W51CT <br><br>
-                                </p>
-                                <p><span>Phone :</span> 0123 4567890
+                                <p><span>Dirección :</span><a
+                                        href="https://www.google.com.mx/maps/place/Universidad+Sim%C3%B3n+Bol%C3%ADvar/@19.371435,-99.1875699,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff8630574407:0x714411e707bcbf6d!8m2!3d19.371435!4d-99.1853812"
+                                        target="_blank"><br>Av. Río Mixcoac 48, Insurgentes Mixcoac, Benito Juárez,<br>
+                                        03920, Ciudad de México, CDMX.<br>
+                                </p></a>
+                                <p><span>Teléfono :</span> (55) 5629-9700
                                 </p>
                                 <p><span>Email :</span>
-                                    <a href="mailto:info@planexpharmacy.com">info@planexpharmacy.com</a>
+                                    <a href="mailto:ventas@mediweb.com">ventas@mediweb.com</a>
                                 </p>
                             </div>
                             <div class="social-icons">
                                 <ul>
-                                    <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/USBMexico/?rf=147455588726590"
+                                            target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/usbmexico/?hl=es-la" target="_blank"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/usb_mexico" target="_blank"><i
+                                                class="fa fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -327,7 +422,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright &#169; 2018 <a href="javascript:;">Planex Pharmacy</a>. All Rights Reserved.</p>
+                <p>Copyright &#169; 2020 <a href="politics.html">Medi-Web</a>. Todos los Derechos Reservados.</p>
             </div>
         </div>
         <!-- End Footer Wrapper -->
@@ -336,7 +431,7 @@
 
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
-    
+
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
 
@@ -350,4 +445,5 @@
     <script src="js/custom.js"></script>
 
 </body>
+
 </html>
