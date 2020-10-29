@@ -18,7 +18,7 @@
         <div style="padding: 20px;">
             <h2 class="text-center titulo-list">Listado de categorías</h2>
         </div>
-        <table class="table" style="width: 50%; margin-right: auto; margin-left: auto;">
+        <table class="table" style="width: 50%; margin-right: auto; margin-left: auto; margin-bottom: 2cm;">
             <thead>
                 <tr>
                     <th class="titulo-tabla-list">Descripción</th>

@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +30,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
+
 <body>
     <!-- Begin wrapper -->
     <div class="wrapper">
@@ -36,7 +38,8 @@
         <header id="top" class="top_navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%"
+                            alt="" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
@@ -45,24 +48,36 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="treatments.html">Productos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="navbardrop"
+                                    data-toggle="dropdown">Categorias</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="treatments.html">Productos 1</a>
+                                    <a class="dropdown-item" href="#">Productos 2</a>
+                                    <a class="dropdown-item" href="#">Productos 3</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.html">Nosotros</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>                       
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <form action="buscar.php" class="Navbar">
+                                <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
+                            </form>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
+                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
+                                    Sesion</a>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +95,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
                                     <li class="breadcrumb-item" aria-current="page">Blog</li>
                                 </ol>
                             </nav>
@@ -102,9 +117,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-02.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -118,9 +136,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-02.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -134,9 +155,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-01.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -150,9 +174,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-02.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -166,9 +193,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-02.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -182,9 +212,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-02.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -198,9 +231,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-01.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -214,9 +250,12 @@
                         <div class="single-home-blog margin-bottom40">
                             <a href="blog-detail.html"><img class="img-fluid" src="images/blog-02.jpg" alt="" /></a>
                             <div class="home-blog-details">
-                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a></h2>
+                                <h2><a href="blog-detail.html">Quisque suscipit ullamcorper ultrices. Nunc accumsan</a>
+                                </h2>
                                 <h3>Post by <a href="javascript:;">Planex Pharmacy</a></h3>
-                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
+                                <p>Nullam ut vehicula eros, sollicitudin efficitur ante. Etiam sodales suscipit ipsum
+                                    sed ultrices. Suspendisse convallis tortor ac lorem porta fringilla. Quisque
+                                    suscipit ullamcorper ultrices. Nunc accumsan cursus velit,
                                     vel facilisis nunc ornare quis. Nunc et eleifend libero.</p>
                                 <a class=" btn btn-primary" href="blog-detail.html">Read More</a>
                             </div>
@@ -224,7 +263,8 @@
                     </article>
                 </div>
                 <div class="load-more">
-                    <a id="load-more" class="btn btn-primary load-more-btn" href="javascript:;"><img src="images/load-more-icon.png" alt="" />Load More</a>
+                    <a id="load-more" class="btn btn-primary load-more-btn" href="javascript:;"><img
+                            src="images/load-more-icon.png" alt="" />Load More</a>
                 </div>
             </div>
         </div>
@@ -262,20 +302,24 @@
                                 <div class="align-items-center">
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" /></div>
+                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" />
+                                            </div>
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" /></div>
+                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" />
+                                            </div>
                                             <input type="text" class="form-control" id="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
-                                            <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                            <div class="input-group-addon"><img class="message-img"
+                                                    src="images/message-icon.png" alt="" /></div>
+                                            <textarea class="form-control" id="message"
+                                                placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-form-box">
@@ -357,7 +401,7 @@
 
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
-    
+
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
 
@@ -371,4 +415,5 @@
     <script src="js/custom.js"></script>
 
 </body>
+
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Planex Pharmacy</title>
+    <title>Medi-Web</title>
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
 
     <!-- Bootstrap CSS -->
@@ -36,6 +37,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
+
 <body>
     <!-- Begin wrapper -->
     <div class="wrapper">
@@ -44,16 +46,15 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <i class="fa fa-bars"></i>
                         </span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="treatments.html">Productos</a>
@@ -63,13 +64,19 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.html">Nosotros</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>                       
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <form action="buscar.php" class="Navbar">
+                                <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
+                            </form>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
+                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
+                                    Sesion</a>
                             </li>
                         </ul>
                     </div>
@@ -83,12 +90,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
-                            <h2>About Us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h2>¿Quiénes Somos?</h2>
+                            <p>Conócenos a nosotros y a nuestro equipo de trabajo.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">About Us</li>
+                                    <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Nosotros</li>
                                 </ol>
                             </nav>
                         </div>
@@ -103,26 +110,25 @@
                 <div class="row">
                     <div class="col-md-7 col-lg-8 col-xl-8">
                         <div class="about-pharmacy-conten">
-                            <h2>About Planex Pharmacy</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
-                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                            <p>Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a
-                                augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies risus vel sapien facilisis facilisis. Sed velit nulla, vestibulum
-                                ut ligula sed, efficitur interdum ipsum. Praesent eget sem nisl.</p>
+                            <h2>¿Qué es Medi-Web?</h2>
+                            <p style="text-align: justify">Medi-Web es un gran equipo de ingenieros que en colaboración con profesionales de la salud ha desarrollado innovadoras soluciones para clínicas con el fin de brindar un manejo integral de las operaciones que realizan. Nuestra
+                                principal ventaja es la accesibilidad a la información debido a que nuestros sistemas trabajan sobre plataforma Web, por lo cual el número de computadoras que puedan acceder al sistema es ILIMITADO. Así mismo, facilita
+                                la gestión de la información ya que el sistema integra la información de los diversos procesos, áreas, y sedes que tenga la empresa. Nuestro compromiso es facilitar y agilizar sus operaciones sin incrementar sus costos
+                                y maximizando sus beneficios.
+                            </p>
                         </div>
-
-                        <ul class="about-pharmacy-list left-ap-list">
-                            <li><a href="javascript:;">Anti-Malaria Tablets</a></li>
-                            <li><a href="javascript:;">Hair Loss Treatment</a></li>
-                            <li><a href="javascript:;">Period Delay Pills</a></li>
-                            <li><a href="javascript:;">Period Delay</a></li>
-                        </ul>
-                        <ul class="about-pharmacy-list">
-                            <li><a href="javascript:;">Stop Smoking</a></li>
-                            <li><a href="javascript:;">Acid Reflux</a></li>
-                            <li><a href="javascript:;">Premature Ejaculation</a></li>
-                            <li><a href="javascript:;">Migraine Relief</a></li>
-                        </ul>
+                        <div class="about-pharmacy-conten">
+                            <h2>Misión</h2>
+                            <p style="text-align: justify">Somos un equipo de ingenieros especializados en el desarrollo de sistemas Web para el sector salud, prácticos, personalizados e innovadores que faciliten y agilicen las operaciones de nuestros clientes y permitan construir
+                                con éxito su desarrollo enfatizando en la gestión de la información como un importante activo.
+                            </p>
+                        </div>
+                        <div class="about-pharmacy-conten">
+                            <h2>Visión</h2>
+                            <p style="text-align: justify">Ser una institución líder de investigación y desarrollo de software en entorno web, impulsando el crecimiento y desarrollo del mundo como fuente matriz de innovadoras propuestas y herramientas tecnológicas que mejoren el sector
+                                a nivel nacional e Internacional.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-5 col-lg-4 col-xl-4">
                         <img class="img-fluid" src="images/pharmacy-img.jpg" alt="" />
@@ -136,7 +142,7 @@
             <div class="container">
                 <div class="row">
                     <div class="out-team-title">
-                        <h2>Our Team</h2>
+                        <h2>Nuestro Equipo</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -146,13 +152,16 @@
                                 <img src="images/out-team-01.jpg" alt="" />
                             </div>
                             <div class="out-team-bg">
-                                <h2>Kevin Perry</h2>
+                                <h2>Ricardo </h2>
                                 <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
                                 <div class="follow-icon">
                                     <ul>
-                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -162,13 +171,16 @@
                                 <img src="images/out-team-02.jpg" alt="" />
                             </div>
                             <div class="out-team-bg">
-                                <h2>Jennifer Lee</h2>
+                                <h2>Brenda </h2>
                                 <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
                                 <div class="follow-icon">
                                     <ul>
-                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -178,13 +190,35 @@
                                 <img src="images/out-team-03.jpg" alt="" />
                             </div>
                             <div class="out-team-bg">
-                                <h2>Brandon Ross</h2>
+                                <h2>Andres </h2>
                                 <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
                                 <div class="follow-icon">
                                     <ul>
-                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="out-team">
+                                <img src="images/out-team-04.jpg" alt="" />
+                            </div>
+                            <div class="out-team-bg">
+                                <h2>Diego </h2>
+                                <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
+                                <div class="follow-icon">
+                                    <ul>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -200,15 +234,15 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="newsletter">
-                            <h2>Subscribe to our newsletter and stay updated on the latest news.</h2>
+                            <h2>Suscríbete a nuestro newsletter y recibe ofertas cada semana.</h2>
                         </div>
                     </div>
                     <div class="col-md-5">
                         <div class="newsletter-form-box">
                             <form>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="Email" placeholder="Email Address">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
                                 </div>
                             </form>
                         </div>
@@ -227,24 +261,26 @@
                                 <div class="align-items-center">
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" /></div>
-                                            <input type="text" class="form-control" id="name" placeholder="Name">
+                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" />
+                                            </div>
+                                            <input type="text" class="form-control" id="name" placeholder="Nombre">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" /></div>
-                                            <input type="text" class="form-control" id="email" placeholder="Email">
+                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" />
+                                            </div>
+                                            <input type="email" class="form-control" id="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
                                             <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
-                                            <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                            <textarea class="form-control" id="message" placeholder="Mensaje"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-form-box">
-                                        <button type="submit" class="btn btn-block btn-send">Send</button>
+                                        <button type="submit" class="btn btn-block btn-send">Enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -253,17 +289,15 @@
                     <div class="col-sm-6 col-md-6 col-lg-2 col-xl-3">
                         <div class="single-widget single-widget-margin-top">
                             <div class="widget-title">
-                                <h2>Site Links</h2>
+                                <h2>Enlaces del Sitio</h2>
                             </div>
                             <div class="footer">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="treatments.html">Treatments</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="treatments.html">Productos</a></li>
+                                    <li><a href="about-us.html">Nosotros</a></li>
                                     <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="reviews.html">Reviews</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -271,17 +305,15 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <div class="single-widget">
                             <div class="widget-title">
-                                <h2>Quick Links</h2>
+                                <h2>Enlaces Rápidos</h2>
                             </div>
                             <div class="footer">
                                 <ul>
-                                    <li><a href="javascript:;">My Account</a></li>
-                                    <li><a href="javascript:;">Pricing</a></li>
-                                    <li><a href="javascript:;">Delivery</a></li>
-                                    <li><a href="javascript:;">Terms and Conditions</a></li>
-                                    <li><a href="javascript:;">Privacy Policy</a></li>
-                                    <li><a href="javascript:;">Site map</a></li>
-
+                                    <li><a href="login.html">Mi Cuenta</a></li>
+                                    <li><a href="terms.html">Términos y Condiciones</a></li>
+                                    <li><a href="priv.html">Política de Privacidad</a></li>
+                                    <li>
+                                        <li><a href="https://www.google.com.mx/maps/preview" target="_blank">Mapa</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -289,23 +321,27 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="single-widget">
                             <div class="widget-title">
-                                <h2>Contact</h2>
+                                <h2>Contacto</h2>
                             </div>
                             <div class="footer">
-                                <p><span>Address :</span><br> 17 Lorem Road,<br> Lorem ipusm, USA, W51CT <br><br>
+                                <p><span>Dirección :</span>
+                                    <a href="https://www.google.com.mx/maps/place/Universidad+Sim%C3%B3n+Bol%C3%ADvar/@19.371435,-99.1875699,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff8630574407:0x714411e707bcbf6d!8m2!3d19.371435!4d-99.1853812"
+                                        target="_blank"><br>Av. Río Mixcoac 48, Insurgentes Mixcoac, Benito Juárez,<br> 03920, Ciudad de México, CDMX.<br>
                                 </p>
-                                <p><span>Phone :</span> 0123 4567890
+                                </a>
+                                <p><span>Teléfono :</span> (55) 5629-9700
                                 </p>
                                 <p><span>Email :</span>
-                                    <a href="mailto:info@planexpharmacy.com">info@planexpharmacy.com</a>
+                                    <a href="mailto:ventas@mediweb.com">ventas@mediweb.com</a>
                                 </p>
                             </div>
                             <div class="social-icons">
                                 <ul>
-                                    <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/USBMexico/?rf=147455588726590" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/usbmexico/?hl=es-la" target="_blank"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/usb_mexico" target="_blank"><i
+                                                class="fa fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -313,7 +349,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright &#169; 2018 <a href="javascript:;">Planex Pharmacy</a>. All Rights Reserved.</p>
+                <p>Copyright &#169; 2020 <a href="politics.html">Medi-Web</a>. Todos los Derechos Reservados.</p>
             </div>
         </div>
         <!-- End Footer Wrapper -->
@@ -322,15 +358,12 @@
 
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
-    
+
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
 
     <!-- bootstrap.min js -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- owl.carousel.min js -->
-    <script src="js/owl.carousel.min.js"></script>
 
     <!-- ie10 viewport bug-workaround js -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
@@ -339,4 +372,5 @@
     <script src="js/custom.js"></script>
 
 </body>
+
 </html>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Planex Pharmacy</title>
+    <title>Medi-Web</title>
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
 
     <!-- Bootstrap CSS -->
@@ -39,16 +39,15 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <i class="fa fa-bars"></i>
                         </span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="treatments.html">Productos</a>
@@ -58,13 +57,19 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.html">Nosotros</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>                       
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <form action="buscar.php" class="Navbar">
+                                <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
+                            </form>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
+                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
+                                    Sesion</a>
                             </li>
                         </ul>
                     </div>
@@ -78,12 +83,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
-                            <h2>Contact</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h2>Inicio de Sesión</h2>
+                            <p>Inicia sesión o regístrate y comienza a comprar.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">Contact</li>
+                                    <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Sesión</li>
                                 </ol>
                             </nav>
                         </div>
@@ -114,17 +119,13 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <form class="account-form-reg">
                                 <h2 class="text-left text-capitalize">Register</h2>
-                                <input type="text" name="rname" class="form-control required" placeholder="Your name"
-                                    required="required" />
+                                <input type="text" name="rname" class="form-control required" placeholder="Your name" required="required" />
                                 <span class="asterisk_input"> </span>
-                                <input type="text" name="remail" class="form-control required" placeholder="Your email"
-                                    required="required" />
+                                <input type="text" name="remail" class="form-control required" placeholder="Your email" required="required" />
                                 <span class="asterisk_input"> </span>
-                                <input type="text" name="rpassword" class="form-control required" placeholder="Password"
-                                    required="required" />
+                                <input type="text" name="rpassword" class="form-control required" placeholder="Password" required="required" />
                                 <span class="asterisk_input"> </span>
-                                <input type="text" name="rppassword" class="form-control required"
-                                    placeholder="Repeat Password" required="required" />
+                                <input type="text" name="rppassword" class="form-control required" placeholder="Repeat Password" required="required" />
                                 <span class="asterisk_input"> </span>
                                 <label>
                                     <input name="radio" type="radio" value="" />
@@ -137,24 +138,76 @@
             </div>
         </div>
         <!-- /Content -->
+        <!-- Begin Newsletter -->
+        <div class="newsletter-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="newsletter">
+                            <h2>Suscríbete a nuestro newsletter y recibe ofertas cada semana.</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="newsletter-form-box">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Newsletter -->
         <!-- Begin Footer Wrapper -->
         <div class="footer-wrapper">
             <div class="container">
                 <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <div class="form-box">
+                            <form>
+                                <div class="align-items-center">
+                                    <div class="col-form-box">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" />
+                                            </div>
+                                            <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-form-box">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" />
+                                            </div>
+                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-form-box">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
+                                            <textarea class="form-control" id="message" placeholder="Mensaje"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-form-box">
+                                        <button type="submit" class="btn btn-block btn-send">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <div class="col-sm-6 col-md-6 col-lg-2 col-xl-3">
                         <div class="single-widget single-widget-margin-top">
                             <div class="widget-title">
-                                <h2>Site Links</h2>
+                                <h2>Enlaces del Sitio</h2>
                             </div>
                             <div class="footer">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="treatments.html">Treatments</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="treatments.html">Productos</a></li>
+                                    <li><a href="about-us.html">Nosotros</a></li>
                                     <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="reviews.html">Reviews</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -162,16 +215,16 @@
                     <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <div class="single-widget">
                             <div class="widget-title">
-                                <h2>Quick Links</h2>
+                                <h2>Enlaces Rápidos</h2>
                             </div>
                             <div class="footer">
                                 <ul>
-                                    <li><a href="javascript:;">My Account</a></li>
-                                    <li><a href="javascript:;">Pricing</a></li>
-                                    <li><a href="javascript:;">Delivery</a></li>
-                                    <li><a href="javascript:;">Terms and Conditions</a></li>
-                                    <li><a href="javascript:;">Privacy Policy</a></li>
-                                    <li><a href="javascript:;">Site map</a></li>
+                                    <li><a href="login.html">Mi Cuenta</a></li>
+                                    <li><a href="terms.html">Términos y Condiciones</a></li>
+                                    <li><a href="priv.html">Política de Privacidad</a></li>
+                                    <li><a href="https://www.google.com.mx/maps/preview" target="_blank">Mapa</a></li>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -179,23 +232,27 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="single-widget">
                             <div class="widget-title">
-                                <h2>Contact</h2>
+                                <h2>Contacto</h2>
                             </div>
                             <div class="footer">
-                                <p><span>Address :</span><br> 17 Lorem Road,<br> Lorem ipusm, USA, W51CT <br><br>
+                                <p><span>Dirección :</span>
+                                    <a href="https://www.google.com.mx/maps/place/Universidad+Sim%C3%B3n+Bol%C3%ADvar/@19.371435,-99.1875699,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff8630574407:0x714411e707bcbf6d!8m2!3d19.371435!4d-99.1853812"
+                                        target="_blank"><br>Av. Río Mixcoac 48, Insurgentes Mixcoac, Benito Juárez,<br> 03920, Ciudad de México, CDMX.<br>
                                 </p>
-                                <p><span>Phone :</span> 0123 4567890
+                                </a>
+                                <p><span>Teléfono :</span> (55) 5629-9700
                                 </p>
                                 <p><span>Email :</span>
-                                    <a href="mailto:info@planexpharmacy.com">info@planexpharmacy.com</a>
+                                    <a href="mailto:ventas@mediweb.com">ventas@mediweb.com</a>
                                 </p>
                             </div>
                             <div class="social-icons">
                                 <ul>
-                                    <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/USBMexico/?rf=147455588726590" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/usbmexico/?hl=es-la" target="_blank"><i
+                                            class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/usb_mexico" target="_blank"><i
+                                            class="fa fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -203,11 +260,12 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright &#169; 2018 <a href="javascript:;">Planex Pharmacy</a>. All Rights Reserved.</p>
+                <p>Copyright &#169; 2020 <a href="politics.html">Medi-Web</a>. Todos los Derechos Reservados.</p>
             </div>
         </div>
         <!-- End Footer Wrapper -->
     </div>
+    <!-- End wrapper -->
 
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
