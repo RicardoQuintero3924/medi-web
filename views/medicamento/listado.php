@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/estilos.css" />
     <link rel="stylesheet" href="../../css/w3.css" />
     <link rel="stylesheet" href="../../css/font-awesome.min.css" />
-    <title>Categorías</title>
+    <title>Medicamentos</title>
 
 </head>
 
@@ -16,12 +16,19 @@
     <?php include '../../template/header.php';  ?>
     <div class="container">
         <div style="padding: 20px;">
-            <h2 class="text-center titulo-list">Listado de categorías</h2>
+            <h2 class="text-center titulo-list">Listado de medicamentos</h2>
         </div>
-        <table class="table" style="width: 50%; margin-right: auto; margin-left: auto; margin-bottom: 2cm;">
+        <table class="table" style="width: 50%; margin-right: auto; margin-left: auto;">
             <thead>
                 <tr>
-                    <th class="titulo-tabla-list">Descripción</th>
+                    <th class="titulo-tabla-list">Nombre comercial</th>
+                    <th class="titulo-tabla-list">Nombre generico</th>
+                    <th class="titulo-tabla-list">Precio</th>
+                    <th class="titulo-tabla-list">Fecha vencimiento</th>
+                    <th class="titulo-tabla-list">Farmacia</th>
+                    <th class="titulo-tabla-list">Laboratorio</th>
+                    <th class="titulo-tabla-list">Stock</th>
+                    <th class="titulo-tabla-list">Categoría</th>
                     <th class="titulo-tabla-list" colspan="3">Acciones</th>
                 </tr>
             </thead>
@@ -38,6 +45,7 @@
                 </div>
                 <div class="modal-body">
                     <div id="bodyModal"></div>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-list" data-dismiss="modal">Cerrar</button>
@@ -51,7 +59,7 @@
     <script src="../../js/jquery.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/popper.min.js"></script>
-    <script src="../../js/categoria.js"></script>
+    <script src="../../js/medicamento.js"></script>
         <script>
         $(document).ready(function() {
             $(".list").css("display", "none");
