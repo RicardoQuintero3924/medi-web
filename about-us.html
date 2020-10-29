@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +37,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
+
 <body>
     <!-- Begin wrapper -->
     <div class="wrapper">
@@ -43,7 +45,8 @@
         <header id="top" class="top_navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%"
+                            alt="" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
@@ -52,24 +55,36 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="treatments.html">Productos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="navbardrop"
+                                    data-toggle="dropdown">Categorias</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="treatments.html">Productos 1</a>
+                                    <a class="dropdown-item" href="#">Productos 2</a>
+                                    <a class="dropdown-item" href="#">Productos 3</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">Nosotros</a>
-                            </li> 
+                                <a class="nav-link active" href="about-us.html">Nosotros</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>                       
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <form action="buscar.php" class="Navbar">
+                                <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
+                            </form>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
+                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
+                                    Sesion</a>
                             </li>
                         </ul>
                     </div>
@@ -83,12 +98,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
-                            <h2>About Us</h2>
+                            <h2>¿Quiénes Somos?</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">About Us</li>
+                                    <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Nosotros</li>
                                 </ol>
                             </nav>
                         </div>
@@ -104,10 +119,17 @@
                     <div class="col-md-7 col-lg-8 col-xl-8">
                         <div class="about-pharmacy-conten">
                             <h2>About Planex Pharmacy</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
-                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                            <p>Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a
-                                augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies risus vel sapien facilisis facilisis. Sed velit nulla, vestibulum
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Proin gravida
+                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt auctor a ornare odio.</p>
+                            <p>Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad
+                                litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam
+                                ac urna eu felis dapibus condimentum sit amet a
+                                augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies risus vel
+                                sapien facilisis facilisis. Sed velit nulla, vestibulum
                                 ut ligula sed, efficitur interdum ipsum. Praesent eget sem nisl.</p>
                         </div>
 
@@ -150,9 +172,12 @@
                                 <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
                                 <div class="follow-icon">
                                     <ul>
-                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -166,9 +191,12 @@
                                 <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
                                 <div class="follow-icon">
                                     <ul>
-                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -182,9 +210,12 @@
                                 <p>Donec in neque nisi. Cras at ultricies nulla. Mauris consequat nulla vitae</p>
                                 <div class="follow-icon">
                                     <ul>
-                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a class="facebook" href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a class="twitter" href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a class="linkedin" href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -227,20 +258,24 @@
                                 <div class="align-items-center">
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" /></div>
+                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" />
+                                            </div>
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" /></div>
+                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" />
+                                            </div>
                                             <input type="text" class="form-control" id="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
-                                            <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                            <div class="input-group-addon"><img class="message-img"
+                                                    src="images/message-icon.png" alt="" /></div>
+                                            <textarea class="form-control" id="message"
+                                                placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-form-box">
@@ -322,7 +357,7 @@
 
     <!-- jquery latest version -->
     <script src="js/jquery.min.js"></script>
-    
+
     <!-- popper.min js -->
     <script src="js/popper.min.js"></script>
 
@@ -339,4 +374,5 @@
     <script src="js/custom.js"></script>
 
 </body>
+
 </html>

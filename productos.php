@@ -50,8 +50,15 @@
         <header id="top" class="top_navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
+<<<<<<< HEAD:treatments.html
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%"
+                            alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+=======
                     <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> master:productos.php
                         <span class="navbar-toggler-icon">
                             <i class="fa fa-bars"></i>
                         </span>
@@ -59,13 +66,22 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <button class="nav-link"><label id="numCarrito"></label><i class="fas fa-cart-plus"></i></button>
                             </li>
                             <li class="nav-item active">
+=======
+>>>>>>> DgEs17
                                 <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="treatments.html">Productos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="navbardrop"
+                                    data-toggle="dropdown">Categorias</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="treatments.html">Productos 1</a>
+                                    <a class="dropdown-item" href="#">Productos 2</a>
+                                    <a class="dropdown-item" href="#">Productos 3</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contacto</a>
@@ -76,9 +92,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
                             </li>
+<<<<<<< HEAD:treatments.html
+                        </ul>
+                        <ul class="navbar-nav">
+                            <form action="buscar.php" class="Navbar">
+                                <input type="text" placeholder="Buscar" name="buscar" class="nav-link">
+                            </form>
+=======
+>>>>>>> master:productos.php
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar Sesion</a>
+                            <li><a class=" btn btn-primary my-2 my-sm-0 my-account-btn" href="login.html">Iniciar
+                                    Sesion</a>
                             </li>
                         </ul>
                     </div>
@@ -92,12 +117,21 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
+<<<<<<< HEAD:treatments.html
+                            <h2>Productos</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Productos</li>
+=======
                             <h2>PRODUCTOS</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active"><a href="index.html">INICIO</a></li>
                                     <li class="breadcrumb-item" aria-current="page">PRODUCTOS</li>
+>>>>>>> master:productos.php
                                 </ol>
                             </nav>
                         </div>
@@ -112,10 +146,213 @@
         <div class="treatments-section">
             <div class="container">
                 <div class="row">
+<<<<<<< HEAD:treatments.html
+                    <div class="col-md-8 col-lg-9">
+                        <div class="row row-margin-none">
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Erectile Dysfunction</h2>
+                                    <img class="img-thumbnail" src="images/treatments-01.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Anti-Malaria Tablets</h2>
+                                    <img class="img-thumbnail" src="images/treatments-02.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Hair Loss Treatment</h2>
+                                    <img class="img-thumbnail" src="images/treatments-03.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Period Delay Pills</h2>
+                                    <img class="img-thumbnail" src="images/treatments-04.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Period Delay</h2>
+                                    <img class="img-thumbnail" src="images/treatments-05.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Cystitis</h2>
+                                    <img class="img-thumbnail" src="images/treatments-06.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Stop Smoking</h2>
+                                    <img class="img-thumbnail" src="images/treatments-07.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Acid Reflux</h2>
+                                    <img class="img-thumbnail" src="images/treatments-08.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Premature Ejaculation</h2>
+                                    <img class="img-thumbnail" src="images/treatments-09.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Migraine Relief</h2>
+                                    <img class="img-thumbnail" src="images/treatments-10.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Unwanted Facial Hair</h2>
+                                    <img class="img-thumbnail" src="images/treatments-11.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-4">
+                                <div class="treatments">
+                                    <h2>Period Delay Pills</h2>
+                                    <img class="img-thumbnail" src="images/treatments-04.jpg" alt="" />
+                                    <p>Lorem ipsum dolor sit amet, lorem consectetur adipiscing elit. Phasellus
+                                        malesuada risus sapien, ac lobortis.</p>
+                                    <a href="javascript:;">Buy Now <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row-MarginNone">
+                                    <div class="right-panel">
+                                        <div class="general-pharmaceutical">
+                                            <a class="img-fluid" href="javascript:;"><img
+                                                    src="images/general-pharmaceutical.jpg" alt="" /></a>
+                                            <a class="img-fluid" href="javascript:;"><img
+                                                    src="images/registered-pharmacy.jpg" alt="" /></a>
+                                        </div>
+                                        <div class="background-gray-bg-main">
+                                            <div class="why-buy-form-box">
+                                                <h2>Why buy from us ?</h2>
+                                                <div class="trustpilot-box">
+                                                    <a href="javascript:;"><img src="images/trustpilot-img.png"
+                                                            alt="" /></a>
+                                                    <h2><a href="javascript:;">Planex Pharmacy</a><br> Reviews on
+                                                        Trustpilot</h2>
+                                                    <p> </p>
+                                                </div>
+                                                <div class="pharmacy-list">
+                                                    <ul>
+                                                        <li><a href="javascript:;">Registered Pharmacy</a></li>
+                                                        <li><a href="javascript:;">Fast and discreet delivery</a></li>
+                                                        <li><a href="javascript:;">Licensed by NHS regulator</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="who-we-are-main-box">
+                                                <h2><i class="fa fa-medkit"></i>who we are</h2>
+                                                <div class="list-link">
+                                                    <ul>
+                                                        <li><a href="javascript:;">Registered Pharmacy</a></li>
+                                                        <li><a href="javascript:;">Fast and discreet delivery</a></li>
+                                                        <li><a href="javascript:;">Licensed by NHS regulator</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="medication-usage-guide-list">
+                                                <h2>Medication usage guide</h2>
+                                                <div class="youtube">
+                                                    <div class="youtube-btn">
+                                                        <a href="javascript:;"><img src="images/youtube-btn.png"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <img class="img-thumbnail" src="images/youtube.jpg" alt="" />
+                                                </div>
+                                                <div class="medication-list">
+                                                    <ul>
+                                                        <li><a href="javascript:;">Anti-Malaria Tablets</a></li>
+                                                        <li><a href="javascript:;">Hair Loss Treatment</a></li>
+                                                        <li><a href="javascript:;">Period Delay Pills</a></li>
+                                                        <li><a href="javascript:;">Period Delay</a></li>
+                                                        <li><a href="javascript:;">Cystitis</a></li>
+                                                        <li><a href="javascript:;">Stop Smoking</a></li>
+                                                        <li><a href="javascript:;">Acid Reflux</a></li>
+                                                        <li><a href="javascript:;">Premature Ejaculation</a></li>
+                                                        <li><a href="javascript:;">Migraine Relief</a></li>
+                                                        <li><a href="javascript:;">Unwanted Facial Hair</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="who-we-are-main-box">
+                                                <h2>Latest Post</h2>
+                                                <img class="img-thumbnail" src="images/latest-img.jpg" alt="" />
+                                                <div class="latest-post">
+                                                    <p>May 11, 2017</p>
+                                                    <h2>Quisque suscipit ullamcorper ultrice Nunc accumsan lorem
+                                                        ispum...</h2>
+                                                    <a href="blog-detail.html">Read More <i
+                                                            class="fa fa-angle-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="view-all-post">
+                                                <a href="blog.html">View all post</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+=======
                     <div class="col-md-12 col-lg-12">
 
                         <div class="row row-margin-none" id="list-productos">
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> master:productos.php
+>>>>>>> DgEs17
                         </div>
                     </div>
                 </div>
@@ -142,7 +379,9 @@
                                         <img class="rounded-circle" src="images/client-img.jpg" alt="" />
                                     </div>
                                     <div class="patient-review-slide-box">
-                                        <p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis erat tincidunt ac. Pellentesque molestie posuere dolor id gravida. Proin consectetur metus et erat tincidunt
+                                        <p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                            malesuada risus sapien, ac lobortis erat tincidunt ac. Pellentesque molestie
+                                            posuere dolor id gravida. Proin consectetur metus et erat tincidunt
                                             nec volutpat. &#8221;</p>
                                     </div>
                                 </div>
@@ -153,7 +392,9 @@
                                         <img class="rounded-circle" src="images/client-img.jpg" alt="" />
                                     </div>
                                     <div class="patient-review-slide-box">
-                                        <p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis erat tincidunt ac. Pellentesque molestie posuere dolor id gravida. Proin consectetur metus et erat tincidunt
+                                        <p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                            malesuada risus sapien, ac lobortis erat tincidunt ac. Pellentesque molestie
+                                            posuere dolor id gravida. Proin consectetur metus et erat tincidunt
                                             nec volutpat. &#8221;</p>
                                     </div>
                                 </div>
@@ -164,7 +405,9 @@
                                         <img class="rounded-circle" src="images/client-img.jpg" alt="" />
                                     </div>
                                     <div class="patient-review-slide-box">
-                                        <p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada risus sapien, ac lobortis erat tincidunt ac. Pellentesque molestie posuere dolor id gravida. Proin consectetur metus et erat tincidunt
+                                        <p>&#8220; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                            malesuada risus sapien, ac lobortis erat tincidunt ac. Pellentesque molestie
+                                            posuere dolor id gravida. Proin consectetur metus et erat tincidunt
                                             nec volutpat. &#8221;</p>
                                     </div>
                                 </div>
@@ -208,20 +451,24 @@
                                 <div class="align-items-center">
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" /></div>
+                                            <div class="input-group-addon"><img src="images/user-icon.png" alt="" />
+                                            </div>
                                             <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" /></div>
+                                            <div class="input-group-addon"><img src="images/email-icon.png" alt="" />
+                                            </div>
                                             <input type="text" class="form-control" id="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
-                                            <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                            <div class="input-group-addon"><img class="message-img"
+                                                    src="images/message-icon.png" alt="" /></div>
+                                            <textarea class="form-control" id="message"
+                                                placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-form-box">
@@ -299,6 +546,14 @@
         <!-- End Footer Wrapper -->
     </div>
 
+<<<<<<< HEAD:treatments.html
+    <!-- jquery latest version -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- popper.min js -->
+    <script src="js/popper.min.js"></script>
+=======
+>>>>>>> master:productos.php
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
