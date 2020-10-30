@@ -22,12 +22,13 @@ if (!empty($_POST)) {
             $id = $_POST['id'];
             $cantidad = $_POST['cantidad'];
             $codigo = $_POST['codigo'];
+
             if (!$result = mysqli_query($conection, "INSERT INTO orden_medicamentos (id_medicamento, cantidad, relacion)
                 VALUES('$id', '$cantidad', '$codigo')")) die();
-            
+
             echo $codigo;
             break;
-        case 'findByIdxMedi':
+        case 'findByIdStockxMedi':
             include '../db/Conexion.php';
             $id = $_POST['id'];
             if (!$result = mysqli_query($conection, "SELECT stock FROM medicamentos WHERE id_medicamento = '$id'")) die();
@@ -51,6 +52,40 @@ if (!empty($_POST)) {
             break;
 
 
+        case 'selectOrdenMedi':
+            include '../db/Conexion.php';
+            $codigo = $_POST['codigo'];
+
+            if (!$result = mysqli_query($conection, "SELECT 
+                    m.nombre_comercial AS nombre, 
+                    m.precio, 
+                    om.cantidad  
+                    FROM orden_medicamentos AS om
+                    INNER JOIN medicamentos AS m ON m.id_medicamento = om.id_medicamento
+                    WHERE om.relacion = '$codigo'")) die();
+
+            $i = 0;
+
+            $data = array();
+            while ($row = mysqli_fetch_array($result)) {
+                $data[$i] = $row;
+                $i++;
+            }
+            echo json_encode($data);
+            break;
+
+        case 'carrito':
+            $arr = $_POST['array'];
+            $i = 0;
+
+            $data = array();
+            while ($row = mysqli_fetch_array($arr)) {
+                $data[$i] = $row;
+                $i++;
+            }
+            echo json_encode($data);
+
+            break;
 
         default:
             echo 'Error';
