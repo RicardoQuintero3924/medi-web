@@ -1,3 +1,7 @@
+<?php
+session_start();
+var_dump($_SESSION['array']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,5 +15,10 @@
     <h2></h2>
 
 </body>
+
+<script src="js/jquery.js"></script>
+<script>
+    
+</script>
 
 </html>
