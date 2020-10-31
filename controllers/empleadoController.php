@@ -48,7 +48,7 @@ if (!empty($_POST)) {
                 empleados SET nombre = '$nombre', apellido = '$apellido', correo_electronico = '$correo', 
                 fecha_nacimiento = '$fecha', tipo_empleado = '$tipoEmpleado' WHERE  id_empleado = '$id'
             ")) die();
-            echo 'Tipo empleado actualizado';
+            echo 'Empleado actualizado';
             break;
         case 'insert':
             include '../db/Conexion.php';
@@ -71,7 +71,7 @@ if (!empty($_POST)) {
                 ('$usuario', '$contrasena', 2, '$tipoEmpleado', '$documento')
             ")) die();
 
-            echo 'tipo cliente agregado';
+            echo 'Empleado agregado';
             break;
         case 'insertUsuario':
 

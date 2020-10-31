@@ -23,14 +23,6 @@
             <h2 class="text-center" style="font-weight: 600; color: #01316D">Panel administrativo</h2>
 
         </div>
-        <!-- <a href="index.php">PDF</a> -->
-
-        <!-- <div class="row">
-            <div class="col-md-4 ">
-                <canvas id="myChart" class="col-md-12"></canvas>
-                <canvas id="myChart2" class="col-md-12"></canvas>
-            </div> -->
-        <!-- <div class="col-md-8"> -->
         <div class="row">
             <div class="col-md-4 categoria">
                 <a href="../empleado/listado.php">
@@ -51,7 +43,7 @@
                 </a>
             </div>
             <div class="col-md-4 categoria">
-                <a href="javascript:;">
+                <a href="../pedido/listado.php">
                     <div class="other-treatments">
                         <img src="../../images/list-thumb.png" alt="" />
                         <h2>Pedidos</h2>
@@ -100,9 +92,16 @@
                     </div>
                 </a>
             </div>
-
+            <div class="col-md-4 categoria">
+                <a href="../pedido/listadox.php">
+                    <div class="other-treatments">
+                        <img src="../../images/list-thumb.png" alt="" />
+                        <h2>Pedidos dados de alta</h2>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </a>
+            </div>
         </div>
-
     </div>
 
     <!-- </div> -->

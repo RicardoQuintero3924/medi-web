@@ -116,3 +116,8 @@ html {
     color: var(--colorPrincipal);
     font-weight: bold;
 }
+
+.modalCarrito {
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -17,17 +17,6 @@ if (!empty($_POST)) {
             }
             echo json_encode($data);
             break;
-        case 'insert':
-            include '../db/Conexion.php';
-            $id = $_POST['id'];
-            $cantidad = $_POST['cantidad'];
-            $codigo = $_POST['codigo'];
-
-            if (!$result = mysqli_query($conection, "INSERT INTO orden_medicamentos (id_medicamento, cantidad, relacion)
-                VALUES('$id', '$cantidad', '$codigo')")) die();
-
-            echo $codigo;
-            break;
         case 'findByIdStockxMedi':
             include '../db/Conexion.php';
             $id = $_POST['id'];
@@ -84,8 +73,31 @@ if (!empty($_POST)) {
                 $i++;
             }
             echo json_encode($data);
-
             break;
+        case 'insert':
+                include '../db/Conexion.php';
+                $id = $_POST['id'];
+                $cantidad = $_POST['cantidad'];
+                $codigo = $_POST['codigo'];
+    
+                if (!$result = mysqli_query($conection, "INSERT INTO orden_medicamentos (id_medicamento, cantidad, relacion)
+                    VALUES('$id', '$cantidad', '$codigo')")) die();
+
+                if (!$result1 = mysqli_query($conection, "UPDATE
+                    medicamentos SET stock = stock - '$cantidad' WHERE id_medicamento = '$id'")) die();
+    
+                echo 'OK';
+                break;
+            case 'insertPedido':
+                    include '../db/Conexion.php';
+                    $valorPedido = $_POST['valorPedido'];
+                    $codigo = $_POST['codigo'];
+        
+                    if (!$result = mysqli_query($conection, "INSERT INTO orden_pedidos (valor_pedido, relacion, fecha_ped)
+                        VALUES('$valorPedido', '$codigo', NOW())")) die();
+    
+                    echo 'Pedido realizado con exito!!';
+                    break;
 
         default:
             echo 'Error';
