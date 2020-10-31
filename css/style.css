@@ -1683,22 +1683,6 @@ a:focus,
     text-align: center;
 }
 
-.review-box::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin-left: -0.5em;
-    bottom: -2em;
-    left: 90%;
-    box-sizing: border-box;
-    border: 1em solid black;
-    border-color: transparent transparent #fff #fff;
-    transform-origin: 0 0;
-    transform: rotate(-45deg);
-    box-shadow: -4px 4px 8px 0 rgba(205, 205, 205, 0.6);
-}
-
 .review-box p {
     margin: 15px 0 0 0;
     padding: 0;
