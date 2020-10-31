@@ -429,6 +429,7 @@
             let code = "";
             let total = 0;
             for (let i = 0; i < arrayCarrito.length; i++) {
+                total += arrayCarrito[i].precio * parseInt(arrayCarrito[i].cantidad);
                 code += `
                     <div class="row">
                         <div class="col-md-2"><img style="width: 80px; height: 80px;" src="../../${arrayCarrito[i].imagen}" alt="" /></div>
@@ -439,21 +440,25 @@
                         <div class="col-md-1 mt-4 modalCarrito"><a href="javascript:eliminarCarrito(${arrayCarrito[i].id})"><i class="fas fa-trash"></i></a></div>
                     </div>
                     <hr>
+                    
                 `;
             }
-
+            code  += `<div id="totalCarrito"></div>`;
             $("#bodyCarrito").html(code);
+           //$("#totalCarrito").text(new Intl.NumberFormat('es-CO').format(total));
             $("#modalCarrito").modal("show");
 
         });
 
         function restarCarrito(id) {
+            let total = 0;
             let code = '';
             for (let i = 0; i < arrayCarrito.length; i++) {
                 if (arrayCarrito[i].id == id) {
                     if (arrayCarrito[i].cantidad == 1) {
                         return alert("Por favor eliminar el registro");
                     } else {
+                        total += arrayCarrito[i].precio * parseInt(arrayCarrito[i].cantidad);
                         code += `
                          <div class="row">
                             <div class="col-md-2"><img style="width: 80px; height: 80px;" src="../../${arrayCarrito[i].imagen}" alt="" /></div>
@@ -467,6 +472,7 @@
 
                     }
                 } else {
+                    total += arrayCarrito[i].precio * parseInt(arrayCarrito[i].cantidad);
                     code += `
                         <div class="row">
                         <div class="col-md-2"><img style="width: 80px; height: 80px;" src="../../${arrayCarrito[i].imagen}" alt="" /></div>
@@ -479,7 +485,9 @@
                     <hr>`;
                 }
             }
+            code  += `<div id="totalCarrito"></div>`;
             $("#bodyCarrito").html(code);
+            //$("#totalCarrito").text(new Intl.NumberFormat('es-CO').format(total));
         }
 
         function sumarCarrito(id) {
@@ -492,6 +500,7 @@
                     let stock = parseInt(result[0].stock);
                     let code = '';
                     let cant = 0;
+                    let total = 0;
                     for (let i = 0; i < arrayCarrito.length; i++) {
                         debugger;
                         if (arrayCarrito[i].id == id) {
@@ -501,6 +510,7 @@
                                 ++arrayCarrito[i].cantidad;
                                 debugger;
                                 for (let j = 0; j < arrayCarrito.length; j++) {
+                                    total += arrayCarrito[i].precio * parseInt(arrayCarrito[i].cantidad);
                                     code += `
                                         <div class="row">
                                         <div class="col-md-2"><img style="width: 80px; height: 80px;" src="../../${arrayCarrito[j].imagen}" alt="" /></div>
@@ -515,7 +525,9 @@
                             }
                         }
                     }
+                    code  += `<div id="totalCarrito"></div>`;
                     $("#bodyCarrito").html(code);
+                    //$("#totalCarrito").text(new Intl.NumberFormat('es-CO').format(total));
                 },
                 error: function() {
                     alert("Error");
@@ -534,7 +546,9 @@
             }
             arrayCarrito.splice(pos, 1);
             let code = '';
+            let total = 0;
             for (let i = 0; i < arrayCarrito.length; i++) {
+                total += arrayCarrito[i].precio * parseInt(arrayCarrito[i].cantidad);
                 code += `
                     <div class="row">
                         <div class="col-md-2"><img style="width: 80px; height: 80px;" src="../../${arrayCarrito[i].imagen}" alt="" /></div>
@@ -545,9 +559,12 @@
                         <div class="col-md-1 mt-4 modalCarrito"><a href="javascript:eliminarCarrito(${arrayCarrito[i].id})"><i class="fas fa-trash"></i></a></div>
                     </div>
                     <hr>
+                    
                 `;
             }
+            code  += `<div id="totalCarrito"></div>`;
             $("#numCarrito").text(--conCarrito);
+            //$("#totalCarrito").text(new Intl.NumberFormat('es-CO').format(total));
             $("#bodyCarrito").html(code);
         }
 
