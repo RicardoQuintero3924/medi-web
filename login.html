@@ -38,8 +38,10 @@
         <header id="top" class="top_navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50%" height="70%"
+                            alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <i class="fa fa-bars"></i>
                         </span>
@@ -49,8 +51,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="treatments.html">Productos</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="navbardrop"
+                                    data-toggle="dropdown">Categorias</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item nav-item" href="treatments.html">Productos 1</a>
+                                    <a class="dropdown-item" href="#">Productos 2</a>
+                                    <a class="dropdown-item" href="#">Productos 3</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contacto</a>
@@ -78,17 +86,17 @@
         </header>
         <!-- End Top Navbar -->
         <!-- Begin Banner -->
-        <div class="about-banner-section">
+        <div class="about-banner-section ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-banner-title">
-                            <h2>Inicio de Sesión</h2>
-                            <p>Inicia sesión o regístrate y comienza a comprar.</p>
+                            <h2>Usuario</h2>
+                            <p>Ingresa a tu cuenta.</p>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
-                                    <li class="breadcrumb-item" aria-current="page">Sesión</li>
+                                    <li class="breadcrumb-item" aria-current="page">Iniciar Sesion</li>
                                 </ol>
                             </nav>
                         </div>
@@ -97,47 +105,123 @@
             </div>
         </div>
         <!-- End Banner -->
-        <!-- Content -->
-        <div class="content-part account-page">
+        <!-- Begin Review Section -->
+        <div class="about-pharmacy-section">
             <div class="container">
-                <div class="myaccount-form text-left">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <form class="account-form-login">
-                                <h2 class="text-left text-capitalize">Login</h2>
-                                <input type="text" name="lname" class="form-control" placeholder="Your name" />
-                                <input type="text" name="lpassword" class="form-control" placeholder="password" />
-                                <label>
-                                    <input name="remember" type="checkbox">
-                                    <a> Remember me</a></label>
-                                <label class="pull-right">
-                                    <input name="forgot pass" type="checkbox">
-                                    <a> Forgot your Password</a></label>
-                                <input type="submit" value="LOGIN" />
-                            </form>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="review-box">
+                            <div class="container">
+                                <div class="quote-img">
+                                    <div class="form-box">
+                                        <br>
+                                        <img src="images/user.png" alt="" width="70px" />
+                                        <br><br>
+                                        <h2 style="color: #53a6d5;">Acceso</h2>
+                                        <br>
+                                    </div>
+                                    <div class="form-box">
+                                        <form action="" method="POST">
+                                            <div class="container">
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="text" class="form-control" id="name"
+                                                            placeholder="Nombre" style="text-align: center">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="email" class="form-control"
+                                                            style="text-align: center" id="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="password" class="form-control"
+                                                            style="text-align: center" id="password"
+                                                            placeholder="Contraseña">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-block">Ingresar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <form class="account-form-reg">
-                                <h2 class="text-left text-capitalize">Register</h2>
-                                <input type="text" name="rname" class="form-control required" placeholder="Your name" required="required" />
-                                <span class="asterisk_input"> </span>
-                                <input type="text" name="remail" class="form-control required" placeholder="Your email" required="required" />
-                                <span class="asterisk_input"> </span>
-                                <input type="text" name="rpassword" class="form-control required" placeholder="Password" required="required" />
-                                <span class="asterisk_input"> </span>
-                                <input type="text" name="rppassword" class="form-control required" placeholder="Repeat Password" required="required" />
-                                <span class="asterisk_input"> </span>
-                                <label>
-                                    <input name="radio" type="radio" value="" />
-                                    <span> Privacy Policy Agreement?</span></label>
-                                <input type="submit" value="SUBMIT" />
-                            </form>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="review-box">
+                            <div class="container">
+                                <div class="quote-img">
+                                    <div class="form-box">
+                                        <br>
+                                        <img src="images/register.png" alt="" width="70px" />
+                                        <br><br>
+                                        <h2 style="color: #53a6d5;">Registro</h2>
+                                        <br>
+                                    </div>
+                                    <div class="form-box">
+                                        <form action="registrouser.php" method="POST">
+                                            <div class="container">
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="text" class="form-control" name="name"
+                                                            placeholder="Nombre" style="text-align: center">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="text" class="form-control" name="ape"
+                                                            placeholder="Apellido" style="text-align: center">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="email" class="form-control"
+                                                            style="text-align: center" id="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="password" class="form-control"
+                                                            style="text-align: center" id="password"
+                                                            placeholder="Contraseña">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <input type="password" class="form-control"
+                                                            style="text-align: center" id="r_password"
+                                                            placeholder="Confirmar Contraseña">
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <div class="input-group mb-2">
+                                                        <div style="align-content: center;">
+                                                            <input type="checkbox" id="terms"> Por favor acepte los
+                                                            términos y condiciones.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-form-box">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-block">Registrar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Content -->
+        <!-- End Review Section -->
         <!-- Begin Newsletter -->
         <div class="newsletter-bg">
             <div class="container">
@@ -185,8 +269,10 @@
                                     </div>
                                     <div class="col-form-box">
                                         <div class="input-group mb-2">
-                                            <div class="input-group-addon"><img class="message-img" src="images/message-icon.png" alt="" /></div>
-                                            <textarea class="form-control" id="message" placeholder="Mensaje"></textarea>
+                                            <div class="input-group-addon"><img class="message-img"
+                                                    src="images/message-icon.png" alt="" /></div>
+                                            <textarea class="form-control" id="message"
+                                                placeholder="Mensaje"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-form-box">
@@ -235,11 +321,11 @@
                                 <h2>Contacto</h2>
                             </div>
                             <div class="footer">
-                                <p><span>Dirección :</span>
-                                    <a href="https://www.google.com.mx/maps/place/Universidad+Sim%C3%B3n+Bol%C3%ADvar/@19.371435,-99.1875699,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff8630574407:0x714411e707bcbf6d!8m2!3d19.371435!4d-99.1853812"
-                                        target="_blank"><br>Av. Río Mixcoac 48, Insurgentes Mixcoac, Benito Juárez,<br> 03920, Ciudad de México, CDMX.<br>
-                                </p>
-                                </a>
+                                <p><span>Dirección :</span><a
+                                        href="https://www.google.com.mx/maps/place/Universidad+Sim%C3%B3n+Bol%C3%ADvar/@19.371435,-99.1875699,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff8630574407:0x714411e707bcbf6d!8m2!3d19.371435!4d-99.1853812"
+                                        target="_blank"><br>Av. Río Mixcoac 48, Insurgentes Mixcoac, Benito Juárez,<br>
+                                        03920, Ciudad de México, CDMX.<br>
+                                </p></a>
                                 <p><span>Teléfono :</span> (55) 5629-9700
                                 </p>
                                 <p><span>Email :</span>
@@ -248,11 +334,14 @@
                             </div>
                             <div class="social-icons">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/USBMexico/?rf=147455588726590" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.facebook.com/USBMexico/?rf=147455588726590"
+                                            target="_blank"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="https://www.instagram.com/usbmexico/?hl=es-la" target="_blank"><i
-                                            class="fa fa-instagram"></i></a></li>
+                                                class="fa fa-instagram"></i></a></li>
                                     <li><a href="https://twitter.com/usb_mexico" target="_blank"><i
-                                            class="fa fa-twitter"></i></a></li>
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a href="loginemp.html"><i class="fa fa-id-card-o" aria-hidden="true"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
