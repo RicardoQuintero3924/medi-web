@@ -329,7 +329,7 @@
                                     <p class="parrafo">${result[i].descripcion}</p>
                                     <h4>Valor: ${new Intl.NumberFormat('es-CO').format(result[i].precio)} COP</h4>
                                     <h5 class="cantidad">Cantidad:<input type="number" min="0" value="0" id="cantidad${i}"></h5>
-                                    <button id="btnAddCarrito${i}" onclick="addCarrito(${result[i].id_medicamento}, '${result[i].nombre_comercial}', ${result[i].precio}, '${result[i].imagen}', ${i})">Añadir al carrito</button>
+                                    <button class="button" id="btnAddCarrito${i}" onclick="addCarrito(${result[i].id_medicamento}, '${result[i].nombre_comercial}', ${result[i].precio}, '${result[i].imagen}', ${i})">Añadir al carrito</button>
                                     </div>
                             </div>
                         `;
