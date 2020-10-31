@@ -14,7 +14,7 @@ $tamano = strlen ($password_medir);
 $terminos = $_POST['terms'];
 
 if ($tamano < 8){
-    echo "La contraseña de tener al menos 8 caracteres";
+    echo "La contraseña debe tener al menos 8 caracteres";
     die();
 }
 
