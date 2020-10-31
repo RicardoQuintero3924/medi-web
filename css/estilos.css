@@ -129,4 +129,5 @@ html {
 
 .button:hover {
     box-shadow: 0 0 8px var(--colorPrincipal);
+    text-shadow: 0 0 3px white;
 }
