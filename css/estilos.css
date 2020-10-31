@@ -116,3 +116,17 @@ html {
     color: var(--colorPrincipal);
     font-weight: bold;
 }
+
+.button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-family: var(--Ftitulo);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: end;
+}
+
+.button:hover {
+    box-shadow: 0 0 8px var(--colorPrincipal);
+}
