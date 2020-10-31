@@ -79,7 +79,7 @@ if (!empty($_POST)) {
                 $id = $_POST['id'];
                 $cantidad = $_POST['cantidad'];
                 $codigo = $_POST['codigo'];
-    
+
                 if (!$result = mysqli_query($conection, "INSERT INTO orden_medicamentos (id_medicamento, cantidad, relacion)
                     VALUES('$id', '$cantidad', '$codigo')")) die();
 
@@ -88,13 +88,29 @@ if (!empty($_POST)) {
     
                 echo 'OK';
                 break;
+            case 'insertCliente':
+                    include '../db/Conexion.php';
+                    
+                    $codigo = $_POST['codigo'];
+                    $nombre = $_POST['nombre'];
+                    $apellido = $_POST['apellido'];
+                    $correo = $_POST['correo'];
+                    $fecha = $_POST['fecha'];
+                    $direccion = $_POST['direccion'];
+    
+                    if (!$result2 = mysqli_query($conection, "INSERT INTO clientes (nombre, apellido, correo_electronico,
+                    fecha_nacimiento, direccion, codigo) VALUES
+                    ('$nombre', '$apellido', '$correo', '$fecha', '$direccion', '$codigo')")) die();
+        
+                    echo 'OK';
+                    break;
             case 'insertPedido':
                     include '../db/Conexion.php';
                     $valorPedido = $_POST['valorPedido'];
                     $codigo = $_POST['codigo'];
         
-                    if (!$result = mysqli_query($conection, "INSERT INTO orden_pedidos (valor_pedido, relacion, fecha_ped)
-                        VALUES('$valorPedido', '$codigo', NOW())")) die();
+                    if (!$result = mysqli_query($conection, "INSERT INTO orden_pedidos (valor_pedido, relacion, fecha_ped, cod_cliente)
+                        VALUES('$valorPedido', '$codigo', NOW(), '$codigo')")) die();
     
                     echo 'Pedido realizado con exito!!';
                     break;

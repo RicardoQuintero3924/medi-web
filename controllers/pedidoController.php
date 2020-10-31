@@ -29,7 +29,7 @@
                 FROM medicamentos AS m
                 INNER JOIN orden_medicamentos AS om ON om.id_medicamento = m.id_medicamento
                 INNER JOIN orden_pedidos AS op ON om.relacion = op.relacion
-                INNER JOIN clientes AS c ON c.id_cliente = op.id_cliente
+                INNER JOIN clientes AS c ON c.codigo = op.cod_cliente
                 WHERE op.id_pedido = '$id'
                 AND op.estado = 1
                 AND op.entrega = 0")) die();
@@ -58,7 +58,7 @@
                     FROM medicamentos AS m
                     INNER JOIN orden_medicamentos AS om ON om.id_medicamento = m.id_medicamento
                     INNER JOIN orden_pedidos AS op ON om.relacion = op.relacion
-                    INNER JOIN clientes AS c ON c.id_cliente = op.id_cliente
+                    INNER JOIN clientes AS c ON c.codigo = op.cod_cliente
                     WHERE op.id_pedido = '$id'
                     AND op.estado = 0
                     AND op.entrega = 1")) die();

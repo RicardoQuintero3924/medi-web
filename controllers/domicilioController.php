@@ -34,7 +34,7 @@
                     op.codigo_pedido,
                     op.estado_entrega
                 from orden_pedidos AS op
-                INNER JOIN clientes AS c ON c.id_cliente = op.id_cliente
+                INNER JOIN clientes AS c ON c.codigo = op.cod_cliente
                 WHERE op.estado = 0
                 AND op.entrega = 1")) die(); 
                 

@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        
+
         <div class="patient-review-section">
             <div class="container">
                 <div class="row">
@@ -146,10 +146,10 @@
                 </div>
             </div>
         </div>
-        
 
 
-        
+
+
         <div class="footer-wrapper">
             <div class="container">
                 <div class="row">
@@ -260,6 +260,51 @@
                 </div>
                 <div class="modal-body">
                     <div id="bodyCarrito"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir comprando</button>
+                    <button type="button" class="btn btn-primary" id="infoCliente">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCliente" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lx">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel" style="text-transform: uppercase;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Carrito de compra</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" />
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="correo">Correo electronico</label>
+                            <input type="email" class="form-control" id="correo" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fecha">Fecha nacimiento</label>
+                            <input type="date" class="form-control" id="fecha" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" />
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir comprando</button>
@@ -507,7 +552,19 @@
         }
 
         $("#finCompra").click(function() {
-            
+
+            let nombre = $("#nombre").val();
+            let apellido = $("#apellido").val();
+            let correo = $("#correo").val();
+            let fecha = $("#fecha").val();
+            let direccion = $("#direccion").val();
+
+            if(nombre == "") return alert("Por favor ingresar un nombre!!");
+            if(apellido == "") return alert("Por favor ingresar un apellido!!");
+            if(correo == "") return alert("Por favor ingresar un correo!!");
+            if(fecha == "") return alert("Por favor ingresar un fecha!!");
+            if(direccion == "") return alert("Por favor ingresar un direccion!!");
+
             let codigo = create_UUID();
             let total = 0;
             for (let i = 0; i < arrayCarrito.length; i++) {
@@ -525,17 +582,37 @@
                     url: '../../controllers/productoController.php',
                     data: obj,
                     success: function(data) {
-                        
+                        debugger;
                     },
                     error: function() {
                         alert("Error");
                     }
                 });
             }
+            let obj1 = {
+                "nombre" : nombre,
+                "apellido" : apellido,
+                "correo" : correo,
+                "fecha" : fecha,
+                "direccion" : direccion,
+                "action": "insertCliente",
+                "codigo": codigo
+            }
+            $.ajax({
+                type: 'POST',
+                url: '../../controllers/productoController.php',
+                data: obj1,
+                success: function(data) {
+                    
+                },
+                error: function() {
+                    alert("Error");
+                }
+            });
             let obj = {
-                "valorPedido" : total,
-                "codigo" : codigo,
-                "action" : "insertPedido"
+                "valorPedido": total,
+                "codigo": codigo,
+                "action": "insertPedido"
             }
             $.ajax({
                 type: 'POST',
@@ -551,7 +628,15 @@
                     alert("Error");
                 }
             });
+
+        });
+
+        $("#infoCliente").click(() => {
+            $("#infoCliente").css("display", "none");
+            $("#finCompra").css("display", "block");
             
+            $("#modalCarrito").modal("hide");
+            $('#modalCliente').modal("show");
         });
 
 

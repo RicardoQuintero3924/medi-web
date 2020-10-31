@@ -117,11 +117,6 @@ html {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-.modalCarrito {
-    font-size: 16px;
-    font-weight: 600;
-=======
 .button {
     padding: 10px;
     background-color: #007bff;
@@ -135,5 +130,4 @@ html {
 .button:hover {
     box-shadow: 0 0 8px var(--colorPrincipal);
     text-shadow: 0 0 3px white;
->>>>>>> origin/RicardoQuintero3924
 }
